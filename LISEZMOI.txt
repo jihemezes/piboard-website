@@ -1,0 +1,13 @@
+Site vitrine PiBoard — export statique
+======================================
+Aucune compilation : copiez le contenu de ce dossier sur n'importe quel hebergement statique
+(GitHub Pages, Netlify, serveur web...). La page d'entree est index.html.
+
+index.html, tuiles.html, cas-usage.html, contact.html, mentions-legales.html : pages francaises
+en/ : les memes pages en anglais
+style.css : styles communs ; la couleur d'accent se change sur la ligne --accent
+site.js : onglets et popup du catalogue des tuiles
+images/ : favicon et captures d'ecran (voir images/tuiles/LISEZMOI.txt)
+
+A completer avant mise en ligne : les champs entre crochets [ ... ] (adresse e-mail, editeur,
+hebergeur, date, captures d'ecran).

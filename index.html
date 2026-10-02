@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PiBoard — page d'accueil</title>
+<link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&amp;family=IBM+Plex+Sans:wght@400;500;600&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div style="background: #0f1214; color: #e9edef; font-family: 'IBM Plex Sans', 'Segoe UI', system-ui, sans-serif; font-size: 17px; line-height: 1.55">
+
+<header style="max-width: 1200px; margin: 0 auto; padding: 20px 24px; box-sizing: border-box; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px">
+<a href="#top" style="display: flex; align-items: center; gap: 10px; text-decoration: none; font-family: 'Bricolage Grotesque', 'Trebuchet MS', sans-serif; font-weight: 700; font-size: 24px; color: #ffffff; min-height: 44px">
+<svg width="26" height="26" viewBox="0 0 26 26" fill="none" class="acc-stroke" stroke-width="2.2" aria-hidden="true"><rect x="2" y="2" width="12" height="9" rx="1.5"></rect><rect x="17" y="2" width="7" height="9" rx="1.5"></rect><rect x="2" y="14" width="7" height="10" rx="1.5"></rect><rect x="12" y="14" width="12" height="10" rx="1.5"></rect></svg>
+<span>PiBoard</span>
+</a>
+<nav aria-label="Navigation principale" style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 28px; font-size: 16px">
+<a href="tuiles.html" style="text-decoration: none; color: #b4bdc2; min-height: 44px; display: flex; align-items: center">Tuiles</a>
+<a href="cas-usage.html" style="text-decoration: none; color: #b4bdc2; min-height: 44px; display: flex; align-items: center">Cas d'usage</a>
+<a href="#plateformes" style="text-decoration: none; color: #b4bdc2; min-height: 44px; display: flex; align-items: center">Plateformes</a>
+<a href="contact.html" style="text-decoration: none; color: #b4bdc2; min-height: 44px; display: flex; align-items: center">Contact</a>
+<a href="en/index.html" lang="en" aria-label="English version" style="text-decoration: none; color: #b4bdc2; min-height: 44px; display: flex; align-items: center; font-family: 'IBM Plex Mono', Consolas, monospace; font-size: 14px">EN</a>
+<a href="https://github.com/jihemezes/piboard" style="text-decoration: none; color: #ffffff; border: 1px solid #3a4348; border-radius: 6px; padding: 0 16px; min-height: 44px; display: flex; align-items: center; font-weight: 500">GitHub</a>
+</nav>
+</header>
+
+<main id="top">
+
+<section style="max-width: 1200px; margin: 0 auto; padding: 56px 24px 96px; box-sizing: border-box; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(440px, 100%), 1fr)); gap: 56px; align-items: center">
+<div style="display: flex; flex-direction: column; gap: 24px">
+<div style="font-family: 'IBM Plex Mono', Consolas, monospace; font-size: 14px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent)">Tableau de bord auto-hébergé</div>
+<h1 style="margin: 0; font-family: 'Bricolage Grotesque', 'Trebuchet MS', sans-serif; font-weight: 700; font-size: clamp(40px, 6vw, 72px); line-height: 1.02; letter-spacing: -0.02em; color: #ffffff; text-wrap: balance">Tout ce qui compte, sur un seul écran.</h1>
+<p style="margin: 0; font-size: 20px; color: #b4bdc2; max-width: 34em; text-wrap: pretty">PiBoard est un tableau de bord à tuiles pour Windows, Linux, macOS et Raspberry Pi : météo, trafic, actualités par flux RSS, courriel, agenda, programme TV, sports, bourse. 36 tuiles à composer sur un écran mural tactile ou sur le second écran de votre ordinateur.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 14px; align-items: center">
+<a href="https://github.com/jihemezes/piboard/releases" style="text-decoration: none; background: var(--accent); color: #10130f; font-weight: 600; border-radius: 6px; padding: 0 24px; min-height: 52px; display: flex; align-items: center">Télécharger PiBoard</a>
+<a href="tuiles.html" style="text-decoration: none; color: #ffffff; border: 1px solid #3a4348; border-radius: 6px; padding: 0 24px; min-height: 52px; display: flex; align-items: center; font-weight: 500">Voir les tuiles</a>
+</div>
+<div style="font-family: 'IBM Plex Mono', Consolas, monospace; font-size: 14px; color: #9aa3a8">Gratuit · Licence MIT · Windows, Linux, macOS, Raspberry Pi · x64 et arm64</div>
+</div>
+
+<div style="display: flex; flex-direction: column; gap: 12px">
+<div style="background: #05070a; border: 10px solid #1d2327; border-radius: 14px; padding: 10px; aspect-ratio: 16 / 10; box-sizing: border-box; display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); grid-template-rows: repeat(4, minmax(0, 1fr)); gap: 8px; font-family: 'IBM Plex Mono', Consolas, monospace; font-size: clamp(9px, 1.1vw, 13px); color: #b4bdc2">
+<div style="grid-column: span 2; grid-row: span 2; background: #171c20; border: 1px solid #2a3237; border-radius: 6px; padding: 10px; display: flex; flex-direction: column; justify-content: space-between">
+<div>Météo</div>
+<svg viewBox="0 0 48 48" fill="none" class="acc-stroke" stroke-width="2.5" stroke-linecap="round" aria-hidden="true" style="width: 44%; align-self: flex-end"><circle cx="24" cy="24" r="9"></circle><path d="M24 4v6M24 38v6M4 24h6M38 24h6M10 10l4 4M34 34l4 4M38 10l-4 4M14 34l-4 4"></path></svg>
+</div>
+<div style="grid-column: span 3; grid-row: span 3; background: #171c20; border: 1px solid #2a3237; border-radius: 6px; padding: 10px; display: flex; flex-direction: column; gap: 6px; overflow: hidden">
+<div>Trafic</div>
+<svg viewBox="0 0 300 180" fill="none" stroke-linecap="round" preserveAspectRatio="none" aria-hidden="true" style="flex-grow: 1; width: 100%; min-height: 0"><path d="M0 130 C70 120 90 60 150 70 S250 110 300 40" stroke="#3a4348" stroke-width="10"></path><path d="M40 0 C60 60 120 90 130 180" stroke="#3a4348" stroke-width="7"></path><path d="M210 0 C200 70 240 120 230 180" stroke="#3a4348" stroke-width="7"></path><path d="M0 130 C70 120 90 60 150 70" class="acc-stroke" stroke-width="4"></path><path d="M150 70 C190 76 215 96 240 88" stroke="#ffb454" stroke-width="4"></path></svg>
+</div>
+<div style="grid-row: span 2; background: #171c20; border: 1px solid #2a3237; border-radius: 6px; padding: 10px">Sports</div>
+<div style="grid-column: span 2; background: #171c20; border: 1px solid #2a3237; border-radius: 6px; padding: 10px">Programme TV</div>
+<div style="grid-row: span 2; background: #171c20; border: 1px solid #2a3237; border-radius: 6px; padding: 10px">Photos</div>
+<div style="grid-column: span 2; background: #171c20; border: 1px solid #2a3237; border-radius: 6px; padding: 10px">Crypto · Bourse</div>
+<div style="grid-column: span 3; background: #171c20; border: 1px solid #2a3237; border-radius: 6px; padding: 10px">Réseau · Système</div>
+</div>
+<div style="font-family: 'IBM Plex Mono', Consolas, monospace; font-size: 13px; color: #9aa3a8">[Schéma de principe — à remplacer par une capture d'écran réelle de PiBoard]</div>
+</div>
+</section>
+
+<section id="tuiles" style="border-top: 1px solid #252c30">
+<div style="max-width: 1200px; margin: 0 auto; padding: 88px 24px; box-sizing: border-box; display: flex; flex-direction: column; gap: 40px">
+<div style="display: flex; flex-direction: column; gap: 12px; max-width: 720px">
+<div style="font-family: 'IBM Plex Mono', Consolas, monospace; font-size: 14px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent)">Les tuiles</div>
+<h2 style="margin: 0; font-family: 'Bricolage Grotesque', 'Trebuchet MS', sans-serif; font-weight: 700; font-size: clamp(30px, 4vw, 46px); line-height: 1.08; letter-spacing: -0.015em; color: #ffffff; text-wrap: balance">Ce que vous regardez dix fois par jour, déjà affiché.</h2>
+<p style="margin: 0; color: #b4bdc2; text-wrap: pretty">36 tuiles réparties en dix familles. Chacune se déplace et se redimensionne au doigt ou à la souris ; les données viennent de sources ouvertes ou de vos propres services.</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(260px, 100%), 1fr)); gap: 16px">
+<div style="background: #171c20; border: 1px solid #2a3237; border-radius: 8px; padding: 24px; display: flex; flex-direction: column; gap: 8px">
+<h3 style="margin: 0; font-family: 'Bricolage Grotesque', 'Trebuchet MS', sans-serif; font-weight: 700; font-size: 22px; color: #ffffff">Météo</h3>
+<p style="margin: 0; color: #b4bdc2; font-size: 16px">Prévisions Open-Meteo avec plusieurs modèles au choix, dont Météo-France et ECMWF, et heures de lever et de coucher du soleil.</p>
+</div>
+<div style="background: #171c20; border: 1px solid #2a3237; border-radius: 8px; padding: 24px; display: flex; flex-direction: column; gap: 8px">
+<h3 style="margin: 0; font-family: 'Bricolage Grotesque', 'Trebuchet MS', sans-serif; font-weight: 700; font-size: 22px; color: #ffffff">Trafic et trajets</h3>
+<p style="margin: 0; color: #b4bdc2; font-size: 16px">Carte de trafic TomTom en direct, et temps de trajet domicile-travail comparé à l'habituel, avec l'heure de départ conseillée.</p>
+</div>
+<div style="background: #171c20; border: 1px solid #2a3237; border-radius: 8px; padding: 24px; display: flex; flex-direction: column; gap: 8px">
+<h3 style="margin: 0; font-family: 'Bricolage Grotesque', 'Trebuchet MS', sans-serif; font-weight: 700; font-size: 22px; color: #ffffff">Actualités par flux RSS</h3>
+<p style="margin: 0; color: #b4bdc2; font-size: 16px">Vos flux RSS et Atom défilent seuls. Un toucher ouvre l'article en mode lecture, texte extrait de la page, sans quitter le tableau.</p>
+</div>
+<div style="background: #171c20; border: 1px solid #2a3237; border-radius: 8px; padding: 24px; display: flex; flex-direction: column; gap: 8px">
+<h3 style="margin: 0; font-family: 'Bricolage Grotesque', 'Trebuchet MS', sans-serif; font-weight: 700; font-size: 22px; color: #ffffff">Courriel et agenda</h3>
+<p style="margin: 0; color: #b4bdc2; font-size: 16px">Les derniers messages de votre boîte aux lettres IMAP, lisibles au toucher et en lecture seule, à côté de vos calendriers fusionnés.</p>
+</div>
+<div style="background: #171c20; border: 1px solid #2a3237; border-radius: 8px; padding: 24px; display: flex; flex-direction: column; gap: 8px">
+<h3 style="margin: 0; font-family: 'Bricolage Grotesque', 'Trebuchet MS', sans-serif; font-weight: 700; font-size: 22px; color: #ffffff">Crypto et bourse</h3>
+<p style="margin: 0; color: #b4bdc2; font-size: 16px">Cours en direct avec une source de secours pour chaque marché : la tuile reste remplie quand un fournisseur tombe.</p>
+</div>
+<div style="background: #171c20; border: 1px solid #2a3237; border-radius: 8px; padding: 24px; display: flex; flex-direction: column; gap: 8px">
+<h3 style="margin: 0; font-family: 'Bricolage Grotesque', 'Trebuchet MS', sans-serif; font-weight: 700; font-size: 22px; color: #ffffff">Maison connectée</h3>
+<p style="margin: 0; color: #b4bdc2; font-size: 16px">Connexion à Home Assistant en WebSocket, avec repli automatique sur l'API REST.</p>
+</div>
+<div style="background: #171c20; border: 1px solid #2a3237; border-radius: 8px; padding: 24px; display: flex; flex-direction: column; gap: 8px">
+<h3 style="margin: 0; font-family: 'Bricolage Grotesque', 'Trebuchet MS', sans-serif; font-weight: 700; font-size: 22px; color: #ffffff">Réseau et système</h3>
+<p style="margin: 0; color: #b4bdc2; font-size: 16px">État du réseau, adresse IP publique, charge du processeur graphique, avec des courbes qui partagent le même axe de temps.</p>
+</div>
+<div style="background: #171c20; border: 1px solid #2a3237; border-radius: 8px; padding: 24px; display: flex; flex-direction: column; gap: 8px">
+<h3 style="margin: 0; font-family: 'Bricolage Grotesque', 'Trebuchet MS', sans-serif; font-weight: 700; font-size: 22px; color: #ffffff">TV, sports et photos</h3>
+<p style="margin: 0; color: #b4bdc2; font-size: 16px">Programme de la TNT et de Canal+, scores et classements, et vos photos en diaporama depuis un dossier, un NAS ou une clé USB.</p>
+</div>
+</div>
+<div style="display: flex">
+<a href="tuiles.html" style="text-decoration: none; color: #ffffff; border: 1px solid #3a4348; border-radius: 6px; padding: 0 24px; min-height: 52px; display: flex; align-items: center; font-weight: 500">Parcourir les 36 tuiles du catalogue</a>
+</div>
+</div>
+</section>
+
+<section id="classique" style="border-top: 1px solid #252c30">
+<div style="max-width: 1200px; margin: 0 auto; padding: 88px 24px; box-sizing: border-box; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(440px, 100%), 1fr)); gap: 56px; align-items: center">
+<div aria-hidden="true" style="position: relative; background: #05070a; border: 10px solid #1d2327; border-radius: 14px; aspect-ratio: 16 / 10; box-sizing: border-box; display: flex; overflow: hidden; font-family: 'IBM Plex Mono', Consolas, monospace; font-size: clamp(9px, 1.1vw, 13px); color: #e9edef">
+<div style="flex: 0 0 40%; background: #171c20; border-right: 2px solid var(--accent); padding: 10px; box-sizing: border-box; display: flex; flex-direction: column; gap: 8px">
+<div>Volet gauche</div>
+<div style="flex-grow: 1; background: #262e33; border-radius: 5px"></div>
+<div style="flex-grow: 1; background: #262e33; border-radius: 5px"></div>
+<div style="flex-grow: 1; background: #262e33; border-radius: 5px"></div>
+</div>
+<div style="flex: 1 1 0; min-width: 0; padding: 10px; box-sizing: border-box; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); grid-template-rows: repeat(3, minmax(0, 1fr)); gap: 8px; opacity: 0.5">
+<div style="grid-column: span 2; grid-row: span 2; background: #20272c; border-radius: 5px; padding: 8px">Tableau</div>
+<div style="background: #20272c; border-radius: 5px"></div>
+<div style="background: #20272c; border-radius: 5px"></div>
+<div style="grid-column: span 3; background: #20272c; border-radius: 5px"></div>
+</div>
+<div style="position: absolute; top: 0; left: 68%; width: 56px; height: 8px; background: #4a555b; border-radius: 0 0 6px 6px"></div>
+<div style="position: absolute; right: 0; top: 42%; width: 8px; height: 56px; background: #4a555b; border-radius: 6px 0 0 6px"></div>
+<div style="position: absolute; bottom: 0; left: 68%; width: 56px; height: 8px; background: #4a555b; border-radius: 6px 6px 0 0"></div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 16px">
+<div style="font-family: 'IBM Plex Mono', Consolas, monospace; font-size: 14px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent)">Mode classique</div>
+<h2 style="margin: 0; font-family: 'Bricolage Grotesque', 'Trebuchet MS', sans-serif; font-weight: 700; font-size: clamp(30px, 4vw, 46px); line-height: 1.08; letter-spacing: -0.015em; color: #ffffff; text-wrap: balance">Un tableau, et trois volets pour tout le reste.</h2>
+<p style="margin: 0; color: #b4bdc2; text-wrap: pretty">En mode classique, PiBoard affiche un seul tableau. Trois volets escamotables, à gauche, en haut et à droite, ajoutent autant de surfaces : tirez une languette et le volet glisse par-dessus le tableau.</p>
+<ul style="margin: 8px 0 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 12px">
+<li style="display: flex; gap: 12px; align-items: baseline"><span style="font-family: 'IBM Plex Mono', Consolas, monospace; font-size: 14px; color: var(--accent)">01</span><span>Les tuiles d'un volet fermé continuent de fonctionner : le compte à rebours décompte, les scores se rafraîchissent.</span></li>
+<li style="display: flex; gap: 12px; align-items: baseline"><span style="font-family: 'IBM Plex Mono', Consolas, monospace; font-size: 14px; color: var(--accent)">02</span><span>Chaque volet se redimensionne au doigt et peut recevoir son propre thème de couleurs.</span></li>
+<li style="display: flex; gap: 12px; align-items: baseline"><span style="font-family: 'IBM Plex Mono', Consolas, monospace; font-size: 14px; color: var(--accent)">03</span><span>Idéal quand une grande tuile occupe l'écran, une carte de trafic par exemple : le reste attend dans un volet.</span></li>
+<li style="display: flex; gap: 12px; align-items: baseline"><span style="font-family: 'IBM Plex Mono', Consolas, monospace; font-size: 14px; color: var(--accent)">04</span><span>En bas, une languette révèle la barre d'outils : ajout de tuile, mode édition, réglages, aide intégrée.</span></li>
+</ul>
+</div>
+</div>
+</section>
+
+<section id="pages" style="border-top: 1px solid #252c30; background: #14181b">
+<div style="max-width: 1200px; margin: 0 auto; padding: 88px 24px; box-sizing: border-box; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(440px, 100%), 1fr)); gap: 56px; align-items: center">
+<div style="display: flex; flex-direction: column; gap: 16px">
+<div style="font-family: 'IBM Plex Mono', Consolas, monospace; font-size: 14px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent)">Mode tableau de bord</div>
+<h2 style="margin: 0; font-family: 'Bricolage Grotesque', 'Trebuchet MS', sans-serif; font-weight: 700; font-size: clamp(30px, 4vw, 46px); line-height: 1.08; letter-spacing: -0.015em; color: #ffffff; text-wrap: balance">Plusieurs pages, un seul écran.</h2>
+<p style="margin: 0; color: #b4bdc2; text-wrap: pretty">Quand une grille ne suffit plus, répartissez vos tuiles sur plusieurs pages et laissez PiBoard les faire défiler.</p>
+<ul style="margin: 8px 0 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 12px">
+<li style="display: flex; gap: 12px; align-items: baseline"><span style="font-family: 'IBM Plex Mono', Consolas, monospace; font-size: 14px; color: var(--accent)">01</span><span>Pages coulissantes, avec une animation propre à chacune.</span></li>
+<li style="display: flex; gap: 12px; align-items: baseline"><span style="font-family: 'IBM Plex Mono', Consolas, monospace; font-size: 14px; color: var(--accent)">02</span><span>Défilement automatique, durée réglable page par page.</span></li>
+<li style="display: flex; gap: 12px; align-items: baseline"><span style="font-family: 'IBM Plex Mono', Consolas, monospace; font-size: 14px; color: var(--accent)">03</span><span>Image de fond par page, cinq cadrages et un voile pour garder les tuiles lisibles.</span></li>
+</ul>
+</div>
+<div aria-hidden="true" style="display: flex; gap: 14px; align-items: center; overflow: hidden">
+<div style="flex: 0 0 22%; aspect-ratio: 16 / 10; background: #171c20; border: 1px solid #2a3237; border-radius: 8px; opacity: 0.5"></div>
+<div style="flex: 1 1 0; min-width: 0; aspect-ratio: 16 / 10; background: #0f1214; border: 1px solid var(--accent); border-radius: 8px; padding: 10px; box-sizing: border-box; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); grid-template-rows: repeat(3, minmax(0, 1fr)); gap: 8px">
+<div style="grid-column: span 2; grid-row: span 2; background: #20272c; border-radius: 5px"></div>
+<div style="grid-column: span 2; background: #20272c; border-radius: 5px"></div>
+<div style="background: #20272c; border-radius: 5px"></div>
+<div style="background: #20272c; border-radius: 5px"></div>
+<div style="grid-column: span 3; background: #20272c; border-radius: 5px"></div>
+<div style="background: #20272c; border-radius: 5px"></div>
+</div>
+<div style="flex: 0 0 22%; aspect-ratio: 16 / 10; background: #171c20; border: 1px solid #2a3237; border-radius: 8px; opacity: 0.5"></div>
+</div>
+</div>
+</section>
+
+<section id="plateformes" style="border-top: 1px solid #252c30">
+<div style="max-width: 1200px; margin: 0 auto; padding: 88px 24px; box-sizing: border-box; display: flex; flex-direction: column; gap: 40px">
+<div style="display: flex; flex-direction: column; gap: 12px; max-width: 720px">
+<div style="font-family: 'IBM Plex Mono', Consolas, monospace; font-size: 14px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent)">Plateformes</div>
+<h2 style="margin: 0; font-family: 'Bricolage Grotesque', 'Trebuchet MS', sans-serif; font-weight: 700; font-size: clamp(30px, 4vw, 46px); line-height: 1.08; letter-spacing: -0.015em; color: #ffffff; text-wrap: balance">Windows, Linux, macOS, Raspberry Pi : la même application.</h2>
+<p style="margin: 0; color: #b4bdc2; text-wrap: pretty">PiBoard est né sur un Raspberry Pi, mais c'est aujourd'hui une application de bureau à part entière. Toutes les tuiles fonctionnent à l'identique partout ; il reste à choisir le paquet qui correspond à votre système et à votre processeur.</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr)); gap: 16px">
+<div style="border: 1px solid #2a3237; border-radius: 8px; padding: 24px; display: flex; flex-direction: column; gap: 8px">
+<h3 style="margin: 0; font-family: 'Bricolage Grotesque', 'Trebuchet MS', sans-serif; font-weight: 700; font-size: 22px; color: #ffffff">Windows</h3>
+<p style="margin: 0; color: #b4bdc2; font-size: 16px">Un installeur classique pour PC 64 bits. L'application se met à jour seule.</p>
+<div style="font-family: 'IBM Plex Mono', Consolas, monospace; font-size: 13px; color: var(--accent)">x64</div>
+</div>
+<div style="border: 1px solid #2a3237; border-radius: 8px; padding: 24px; display: flex; flex-direction: column; gap: 8px">
+<h3 style="margin: 0; font-family: 'Bricolage Grotesque', 'Trebuchet MS', sans-serif; font-weight: 700; font-size: 22px; color: #ffffff">Linux</h3>
+<p style="margin: 0; color: #b4bdc2; font-size: 16px">Paquet .deb pour Debian, Ubuntu ou Mint, ou AppImage pour toute distribution. Mise à jour automatique.</p>
+<div style="font-family: 'IBM Plex Mono', Consolas, monospace; font-size: 13px; color: var(--accent)">x64 · arm64</div>
+</div>
+<div style="border: 1px solid #2a3237; border-radius: 8px; padding: 24px; display: flex; flex-direction: column; gap: 8px">
+<h3 style="margin: 0; font-family: 'Bricolage Grotesque', 'Trebuchet MS', sans-serif; font-weight: 700; font-size: 22px; color: #ffffff">macOS</h3>
+<p style="margin: 0; color: #b4bdc2; font-size: 16px">Image disque .dmg, à partir de macOS 12. La mise à jour se fait en retéléchargeant le .dmg.</p>
+<div style="font-family: 'IBM Plex Mono', Consolas, monospace; font-size: 13px; color: var(--accent)">arm64 (Apple Silicon) · x64 (Intel)</div>
+</div>
+<div style="border: 1px solid #2a3237; border-radius: 8px; padding: 24px; display: flex; flex-direction: column; gap: 8px">
+<h3 style="margin: 0; font-family: 'Bricolage Grotesque', 'Trebuchet MS', sans-serif; font-weight: 700; font-size: 22px; color: #ffffff">Raspberry Pi</h3>
+<p style="margin: 0; color: #b4bdc2; font-size: 16px">Kiosque plein écran sur Raspberry Pi OS Bookworm ou Trixie, pour un écran tactile mural. Pi 3, 4 ou 5.</p>
+<div style="font-family: 'IBM Plex Mono', Consolas, monospace; font-size: 13px; color: var(--accent)">arm64 · kiosque 32 bits possible</div>
+</div>
+</div>
+<div style="background: #171c20; border: 1px solid #2a3237; border-radius: 8px; padding: 28px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); gap: 16px 40px; align-items: center">
+<h3 style="margin: 0; font-family: 'Bricolage Grotesque', 'Trebuchet MS', sans-serif; font-weight: 700; font-size: 26px; line-height: 1.15; color: #ffffff">x64 ou arm64 : lequel choisir ?</h3>
+<div style="display: flex; flex-direction: column; gap: 10px; color: #b4bdc2">
+<p style="margin: 0"><strong style="color: #ffffff">x64</strong> (aussi noté amd64 ou x86_64) : les processeurs Intel et AMD des PC, et les Mac Intel.</p>
+<p style="margin: 0"><strong style="color: #ffffff">arm64</strong> : les Mac Apple Silicon (M1 et suivants) et les Raspberry Pi 3, 4 et 5 sous système 64 bits.</p>
+<p style="margin: 0">Un paquet ne fonctionne que sur l'architecture pour laquelle il a été construit. L'application de bureau n'existe pas en 32 bits ; un Pi sous système 32 bits passe par l'installation kiosque.</p>
+</div>
+</div>
+<div style="background: #171c20; border: 1px solid #2a3237; border-radius: 8px; padding: 28px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); gap: 16px 40px; align-items: center">
+<h3 style="margin: 0; font-family: 'Bricolage Grotesque', 'Trebuchet MS', sans-serif; font-weight: 700; font-size: 26px; line-height: 1.15; color: #ffffff">Des mises à jour sans tournevis.</h3>
+<p style="margin: 0; color: #b4bdc2">Sous Windows, sous Linux et sur le Pi, PiBoard se met à jour seul depuis GitHub Releases et sauvegarde vos données avant chaque mise à jour. Sur macOS, l'application n'étant pas notarisée par Apple, la mise à jour reste manuelle.</p>
+</div>
+</div>
+</section>
+
+<section id="libre" style="border-top: 1px solid #252c30; background: #14181b">
+<div style="max-width: 1200px; margin: 0 auto; padding: 88px 24px; box-sizing: border-box; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(440px, 100%), 1fr)); gap: 40px 56px">
+<div style="display: flex; flex-direction: column; gap: 12px">
+<div style="font-family: 'IBM Plex Mono', Consolas, monospace; font-size: 14px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent)">Open source</div>
+<h2 style="margin: 0; font-family: 'Bricolage Grotesque', 'Trebuchet MS', sans-serif; font-weight: 700; font-size: clamp(30px, 4vw, 46px); line-height: 1.08; letter-spacing: -0.015em; color: #ffffff; text-wrap: balance">Gratuit, et il le restera.</h2>
+<p style="margin: 0; color: #b4bdc2; text-wrap: pretty">PiBoard est publié sous licence MIT. Pas de version payante, pas de clé de licence, pas de compte à créer : l'application tourne chez vous et vos réglages y restent.</p>
+</div>
+<dl style="margin: 0; display: flex; flex-direction: column">
+<div style="display: flex; flex-wrap: wrap; gap: 4px 24px; padding: 16px 0; border-top: 1px solid #2a3237"><dt style="flex: 0 0 150px; font-family: 'IBM Plex Mono', Consolas, monospace; font-size: 14px; color: #9aa3a8">Licence</dt><dd style="margin: 0; flex: 1 1 220px">MIT, code source sur GitHub</dd></div>
+<div style="display: flex; flex-wrap: wrap; gap: 4px 24px; padding: 16px 0; border-top: 1px solid #2a3237"><dt style="flex: 0 0 150px; font-family: 'IBM Plex Mono', Consolas, monospace; font-size: 14px; color: #9aa3a8">Langues</dt><dd style="margin: 0; flex: 1 1 220px">Français et anglais, interface et aide comprises</dd></div>
+<div style="display: flex; flex-wrap: wrap; gap: 4px 24px; padding: 16px 0; border-top: 1px solid #2a3237"><dt style="flex: 0 0 150px; font-family: 'IBM Plex Mono', Consolas, monospace; font-size: 14px; color: #9aa3a8">Technique</dt><dd style="margin: 0; flex: 1 1 220px">Node.js et JavaScript sans étape de compilation</dd></div>
+<div style="display: flex; flex-wrap: wrap; gap: 4px 24px; padding: 16px 0; border-top: 1px solid #2a3237; border-bottom: 1px solid #2a3237"><dt style="flex: 0 0 150px; font-family: 'IBM Plex Mono', Consolas, monospace; font-size: 14px; color: #9aa3a8">Soutien</dt><dd style="margin: 0; flex: 1 1 220px">Dons facultatifs et sans contrepartie sur <a href="https://ko-fi.com/jihemezes">Ko-fi</a></dd></div>
+</dl>
+</div>
+</section>
+
+<section style="border-top: 1px solid #252c30">
+<div style="max-width: 1200px; margin: 0 auto; padding: 104px 24px; box-sizing: border-box; display: flex; flex-direction: column; align-items: center; gap: 28px; text-align: center">
+<h2 style="margin: 0; font-family: 'Bricolage Grotesque', 'Trebuchet MS', sans-serif; font-weight: 700; font-size: clamp(34px, 5vw, 60px); line-height: 1.04; letter-spacing: -0.02em; color: #ffffff; max-width: 16em; text-wrap: balance">Un écran, vos tuiles, et l'essentiel reste sous les yeux.</h2>
+<div style="display: flex; flex-wrap: wrap; gap: 14px; justify-content: center">
+<a href="https://github.com/jihemezes/piboard/releases" style="text-decoration: none; background: var(--accent); color: #10130f; font-weight: 600; border-radius: 6px; padding: 0 24px; min-height: 52px; display: flex; align-items: center">Télécharger PiBoard</a>
+<a href="https://github.com/jihemezes/piboard" style="text-decoration: none; color: #ffffff; border: 1px solid #3a4348; border-radius: 6px; padding: 0 24px; min-height: 52px; display: flex; align-items: center; font-weight: 500">Lire le code sur GitHub</a>
+</div>
+</div>
+</section>
+
+</main>
+
+<footer style="border-top: 1px solid #252c30">
+<div style="max-width: 1200px; margin: 0 auto; padding: 28px 24px; box-sizing: border-box; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px 24px; font-size: 15px; color: #9aa3a8">
+<div>PiBoard — conçu et développé à Toulouse par Jean-Michel. Licence MIT.</div>
+<div style="display: flex; flex-wrap: wrap; gap: 8px 24px">
+<a href="contact.html" style="color: #b4bdc2">Contact</a>
+<a href="mentions-legales.html" style="color: #b4bdc2">Mentions légales</a>
+<a href="https://github.com/jihemezes/piboard" style="color: #b4bdc2">GitHub</a>
+<a href="https://ko-fi.com/jihemezes" style="color: #b4bdc2">Ko-fi</a>
+</div>
+</div>
+</footer>
+
+</div>
+
+</body>
+</html>
