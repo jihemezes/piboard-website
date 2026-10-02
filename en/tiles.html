@@ -1,0 +1,433 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PiBoard — tile catalogue</title>
+<link rel="icon" href="../images/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&amp;family=IBM+Plex+Sans:wght@400;500;600&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<div style="background: #0f1214; color: #e9edef; font-family: 'IBM Plex Sans', 'Segoe UI', system-ui, sans-serif; font-size: 17px; line-height: 1.55">
+
+<header style="max-width: 1200px; margin: 0 auto; padding: 20px 24px; box-sizing: border-box; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px">
+<a href="index.html" style="display: flex; align-items: center; gap: 10px; text-decoration: none; font-family: 'Bricolage Grotesque', 'Trebuchet MS', sans-serif; font-weight: 700; font-size: 24px; color: #ffffff; min-height: 44px">
+<svg width="26" height="26" viewBox="0 0 26 26" fill="none" class="acc-stroke" stroke-width="2.2" aria-hidden="true"><rect x="2" y="2" width="12" height="9" rx="1.5"></rect><rect x="17" y="2" width="7" height="9" rx="1.5"></rect><rect x="2" y="14" width="7" height="10" rx="1.5"></rect><rect x="12" y="14" width="12" height="10" rx="1.5"></rect></svg>
+<span>PiBoard</span>
+</a>
+<nav aria-label="Main navigation" style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 28px; font-size: 16px">
+<a href="tiles.html" aria-current="page" style="text-decoration: none; color: #ffffff; min-height: 44px; display: flex; align-items: center">Tiles</a>
+<a href="use-cases.html" style="text-decoration: none; color: #b4bdc2; min-height: 44px; display: flex; align-items: center">Use cases</a>
+<a href="contact.html" style="text-decoration: none; color: #b4bdc2; min-height: 44px; display: flex; align-items: center">Contact</a>
+<a href="../tuiles.html" lang="fr" aria-label="Version française" style="text-decoration: none; color: #b4bdc2; min-height: 44px; display: flex; align-items: center; font-family: 'IBM Plex Mono', Consolas, monospace; font-size: 14px">FR</a>
+<a href="https://github.com/jihemezes/piboard" style="text-decoration: none; color: #ffffff; border: 1px solid #3a4348; border-radius: 6px; padding: 0 16px; min-height: 44px; display: flex; align-items: center; font-weight: 500">GitHub</a>
+</nav>
+</header>
+
+<main style="max-width: 1200px; margin: 0 auto; padding: 56px 24px 96px; box-sizing: border-box; display: flex; flex-direction: column; gap: 40px">
+
+<div style="display: flex; flex-direction: column; gap: 16px; max-width: 760px">
+<div style="font-family: 'IBM Plex Mono', Consolas, monospace; font-size: 14px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent)">Catalogue</div>
+<h1 style="margin: 0; font-family: 'Bricolage Grotesque', 'Trebuchet MS', sans-serif; font-weight: 700; font-size: clamp(38px, 5.5vw, 64px); line-height: 1.04; letter-spacing: -0.02em; color: #ffffff; text-wrap: balance">36 tiles, ten families</h1>
+<p style="margin: 0; font-size: 20px; color: #b4bdc2; text-wrap: pretty">The same grouping as in the app when you add a tile. Pick a family, then tap a tile to see its screenshots and how it works in detail.</p>
+</div>
+
+<div role="tablist" aria-label="Tile families" style="display: flex; flex-wrap: wrap; gap: 8px">
+
+<button type="button" role="tab" class="fam-tab" data-fam="0" aria-selected="true" style="font: inherit; font-size: 16px; font-weight: 500; cursor: pointer; min-height: 44px; padding: 0 16px; border-radius: 6px; display: flex; align-items: center; gap: 8px; border: 1px solid var(--accent); background: var(--accent); color: #10130f">
+<span>Weather</span>
+<span style="font-family: 'IBM Plex Mono', Consolas, monospace; font-size: 13px; opacity: 0.75">4</span>
+</button>
+
+<button type="button" role="tab" class="fam-tab" data-fam="1" aria-selected="false" style="font: inherit; font-size: 16px; font-weight: 500; cursor: pointer; min-height: 44px; padding: 0 16px; border-radius: 6px; display: flex; align-items: center; gap: 8px; border: 1px solid #3a4348; background: transparent; color: #e9edef">
+<span>Information</span>
+<span style="font-family: 'IBM Plex Mono', Consolas, monospace; font-size: 13px; opacity: 0.75">4</span>
+</button>
+
+<button type="button" role="tab" class="fam-tab" data-fam="2" aria-selected="false" style="font: inherit; font-size: 16px; font-weight: 500; cursor: pointer; min-height: 44px; padding: 0 16px; border-radius: 6px; display: flex; align-items: center; gap: 8px; border: 1px solid #3a4348; background: transparent; color: #e9edef">
+<span>Getting around</span>
+<span style="font-family: 'IBM Plex Mono', Consolas, monospace; font-size: 13px; opacity: 0.75">3</span>
+</button>
+
+<button type="button" role="tab" class="fam-tab" data-fam="3" aria-selected="false" style="font: inherit; font-size: 16px; font-weight: 500; cursor: pointer; min-height: 44px; padding: 0 16px; border-radius: 6px; display: flex; align-items: center; gap: 8px; border: 1px solid #3a4348; background: transparent; color: #e9edef">
+<span>Home &amp; energy</span>
+<span style="font-family: 'IBM Plex Mono', Consolas, monospace; font-size: 13px; opacity: 0.75">3</span>
+</button>
+
+<button type="button" role="tab" class="fam-tab" data-fam="4" aria-selected="false" style="font: inherit; font-size: 16px; font-weight: 500; cursor: pointer; min-height: 44px; padding: 0 16px; border-radius: 6px; display: flex; align-items: center; gap: 8px; border: 1px solid #3a4348; background: transparent; color: #e9edef">
+<span>Personal</span>
+<span style="font-family: 'IBM Plex Mono', Consolas, monospace; font-size: 13px; opacity: 0.75">3</span>
+</button>
+
+<button type="button" role="tab" class="fam-tab" data-fam="5" aria-selected="false" style="font: inherit; font-size: 16px; font-weight: 500; cursor: pointer; min-height: 44px; padding: 0 16px; border-radius: 6px; display: flex; align-items: center; gap: 8px; border: 1px solid #3a4348; background: transparent; color: #e9edef">
+<span>Entertainment</span>
+<span style="font-family: 'IBM Plex Mono', Consolas, monospace; font-size: 13px; opacity: 0.75">5</span>
+</button>
+
+<button type="button" role="tab" class="fam-tab" data-fam="6" aria-selected="false" style="font: inherit; font-size: 16px; font-weight: 500; cursor: pointer; min-height: 44px; padding: 0 16px; border-radius: 6px; display: flex; align-items: center; gap: 8px; border: 1px solid #3a4348; background: transparent; color: #e9edef">
+<span>Sport</span>
+<span style="font-family: 'IBM Plex Mono', Consolas, monospace; font-size: 13px; opacity: 0.75">3</span>
+</button>
+
+<button type="button" role="tab" class="fam-tab" data-fam="7" aria-selected="false" style="font: inherit; font-size: 16px; font-weight: 500; cursor: pointer; min-height: 44px; padding: 0 16px; border-radius: 6px; display: flex; align-items: center; gap: 8px; border: 1px solid #3a4348; background: transparent; color: #e9edef">
+<span>System &amp; Network</span>
+<span style="font-family: 'IBM Plex Mono', Consolas, monospace; font-size: 13px; opacity: 0.75">6</span>
+</button>
+
+<button type="button" role="tab" class="fam-tab" data-fam="8" aria-selected="false" style="font: inherit; font-size: 16px; font-weight: 500; cursor: pointer; min-height: 44px; padding: 0 16px; border-radius: 6px; display: flex; align-items: center; gap: 8px; border: 1px solid #3a4348; background: transparent; color: #e9edef">
+<span>Page design</span>
+<span style="font-family: 'IBM Plex Mono', Consolas, monospace; font-size: 13px; opacity: 0.75">2</span>
+</button>
+
+<button type="button" role="tab" class="fam-tab" data-fam="9" aria-selected="false" style="font: inherit; font-size: 16px; font-weight: 500; cursor: pointer; min-height: 44px; padding: 0 16px; border-radius: 6px; display: flex; align-items: center; gap: 8px; border: 1px solid #3a4348; background: transparent; color: #e9edef">
+<span>Miscellaneous</span>
+<span style="font-family: 'IBM Plex Mono', Consolas, monospace; font-size: 13px; opacity: 0.75">3</span>
+</button>
+
+</div>
+
+<section role="tabpanel" data-panel="0" style="display: flex; flex-direction: column; gap: 20px">
+<div style="display: flex; flex-direction: column; gap: 6px">
+<h2 style="margin: 0; font-family: 'Bricolage Grotesque', 'Trebuchet MS', sans-serif; font-weight: 700; font-size: 30px; color: #ffffff">Weather</h2>
+<p style="margin: 0; color: #b4bdc2">The weather now, the weather next, and what is going on overhead.</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); gap: 16px">
+
+<button type="button" class="tile-card" aria-haspopup="dialog" data-fam="0" data-tile="0" style="font: inherit; text-align: left; cursor: pointer; background: #171c20; border: 1px solid #2a3237; border-radius: 8px; padding: 24px; display: flex; flex-direction: column; gap: 10px; color: #e9edef">
+<span style="font-family: 'Bricolage Grotesque', 'Trebuchet MS', sans-serif; font-weight: 700; font-size: 22px; color: #ffffff">Weather</span>
+<span style="color: #b4bdc2; font-size: 16px; flex-grow: 1">Current conditions and forecast, over a real photo that matches the weather.</span>
+<span style="font-family: 'IBM Plex Mono', Consolas, monospace; font-size: 13px; color: var(--accent)">Screenshots and details →</span>
+</button>
+
+<button type="button" class="tile-card" aria-haspopup="dialog" data-fam="0" data-tile="1" style="font: inherit; text-align: left; cursor: pointer; background: #171c20; border: 1px solid #2a3237; border-radius: 8px; padding: 24px; display: flex; flex-direction: column; gap: 10px; color: #e9edef">
+<span style="font-family: 'Bricolage Grotesque', 'Trebuchet MS', sans-serif; font-weight: 700; font-size: 22px; color: #ffffff">Weather Radar</span>
+<span style="color: #b4bdc2; font-size: 16px; flex-grow: 1">Animated precipitation loop over a real map.</span>
+<span style="font-family: 'IBM Plex Mono', Consolas, monospace; font-size: 13px; color: var(--accent)">Screenshots and details →</span>
+</button>
+
+<button type="button" class="tile-card" aria-haspopup="dialog" data-fam="0" data-tile="2" style="font: inherit; text-align: left; cursor: pointer; background: #171c20; border: 1px solid #2a3237; border-radius: 8px; padding: 24px; display: flex; flex-direction: column; gap: 10px; color: #e9edef">
+<span style="font-family: 'Bricolage Grotesque', 'Trebuchet MS', sans-serif; font-weight: 700; font-size: 22px; color: #ffffff">Air Quality</span>
+<span style="color: #b4bdc2; font-size: 16px; flex-grow: 1">European air quality index and pollen levels.</span>
+<span style="font-family: 'IBM Plex Mono', Consolas, monospace; font-size: 13px; color: var(--accent)">Screenshots and details →</span>
+</button>
+
+<button type="button" class="tile-card" aria-haspopup="dialog" data-fam="0" data-tile="3" style="font: inherit; text-align: left; cursor: pointer; background: #171c20; border: 1px solid #2a3237; border-radius: 8px; padding: 24px; display: flex; flex-direction: column; gap: 10px; color: #e9edef">
+<span style="font-family: 'Bricolage Grotesque', 'Trebuchet MS', sans-serif; font-weight: 700; font-size: 22px; color: #ffffff">Astronomy</span>
+<span style="color: #b4bdc2; font-size: 16px; flex-grow: 1">Moon phase, visible ISS passes, visible planets.</span>
+<span style="font-family: 'IBM Plex Mono', Consolas, monospace; font-size: 13px; color: var(--accent)">Screenshots and details →</span>
+</button>
+
+</div>
+</section>
+<section role="tabpanel" data-panel="1" hidden style="display: flex; flex-direction: column; gap: 20px">
+<div style="display: flex; flex-direction: column; gap: 6px">
+<h2 style="margin: 0; font-family: 'Bricolage Grotesque', 'Trebuchet MS', sans-serif; font-weight: 700; font-size: 30px; color: #ffffff">Information</h2>
+<p style="margin: 0; color: #b4bdc2">News and markets, without opening a browser.</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); gap: 16px">
+
+<button type="button" class="tile-card" aria-haspopup="dialog" data-fam="1" data-tile="0" style="font: inherit; text-align: left; cursor: pointer; background: #171c20; border: 1px solid #2a3237; border-radius: 8px; padding: 24px; display: flex; flex-direction: column; gap: 10px; color: #e9edef">
+<span style="font-family: 'Bricolage Grotesque', 'Trebuchet MS', sans-serif; font-weight: 700; font-size: 22px; color: #ffffff">RSS feed</span>
+<span style="color: #b4bdc2; font-size: 16px; flex-grow: 1">Your RSS and Atom feeds scrolling by, with the article readable in a popup.</span>
+<span style="font-family: 'IBM Plex Mono', Consolas, monospace; font-size: 13px; color: var(--accent)">Screenshots and details →</span>
+</button>
+
+<button type="button" class="tile-card" aria-haspopup="dialog" data-fam="1" data-tile="1" style="font: inherit; text-align: left; cursor: pointer; background: #171c20; border: 1px solid #2a3237; border-radius: 8px; padding: 24px; display: flex; flex-direction: column; gap: 10px; color: #e9edef">
+<span style="font-family: 'Bricolage Grotesque', 'Trebuchet MS', sans-serif; font-weight: 700; font-size: 22px; color: #ffffff">Web page</span>
+<span style="color: #b4bdc2; font-size: 16px; flex-grow: 1">Any page inside a tile, with zoom and periodic reload.</span>
+<span style="font-family: 'IBM Plex Mono', Consolas, monospace; font-size: 13px; color: var(--accent)">Screenshots and details →</span>
+</button>
+
+<button type="button" class="tile-card" aria-haspopup="dialog" data-fam="1" data-tile="2" style="font: inherit; text-align: left; cursor: pointer; background: #171c20; border: 1px solid #2a3237; border-radius: 8px; padding: 24px; display: flex; flex-direction: column; gap: 10px; color: #e9edef">
+<span style="font-family: 'Bricolage Grotesque', 'Trebuchet MS', sans-serif; font-weight: 700; font-size: 22px; color: #ffffff">Crypto prices</span>
+<span style="color: #b4bdc2; font-size: 16px; flex-grow: 1">Live prices, with a 24h, 7d, 30d or 1y chart on tap.</span>
+<span style="font-family: 'IBM Plex Mono', Consolas, monospace; font-size: 13px; color: var(--accent)">Screenshots and details →</span>
+</button>
+
+<button type="button" class="tile-card" aria-haspopup="dialog" data-fam="1" data-tile="3" style="font: inherit; text-align: left; cursor: pointer; background: #171c20; border: 1px solid #2a3237; border-radius: 8px; padding: 24px; display: flex; flex-direction: column; gap: 10px; color: #e9edef">
+<span style="font-family: 'Bricolage Grotesque', 'Trebuchet MS', sans-serif; font-weight: 700; font-size: 22px; color: #ffffff">Stocks &amp; indices</span>
+<span style="color: #b4bdc2; font-size: 16px; flex-grow: 1">Indices, shares, currencies and commodities, by exchange.</span>
+<span style="font-family: 'IBM Plex Mono', Consolas, monospace; font-size: 13px; color: var(--accent)">Screenshots and details →</span>
+</button>
+
+</div>
+</section>
+<section role="tabpanel" data-panel="2" hidden style="display: flex; flex-direction: column; gap: 20px">
+<div style="display: flex; flex-direction: column; gap: 6px">
+<h2 style="margin: 0; font-family: 'Bricolage Grotesque', 'Trebuchet MS', sans-serif; font-weight: 700; font-size: 30px; color: #ffffff">Getting around</h2>
+<p style="margin: 0; color: #b4bdc2">Before you leave, and for watching planes go by.</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); gap: 16px">
+
+<button type="button" class="tile-card" aria-haspopup="dialog" data-fam="2" data-tile="0" style="font: inherit; text-align: left; cursor: pointer; background: #171c20; border: 1px solid #2a3237; border-radius: 8px; padding: 24px; display: flex; flex-direction: column; gap: 10px; color: #e9edef">
+<span style="font-family: 'Bricolage Grotesque', 'Trebuchet MS', sans-serif; font-weight: 700; font-size: 22px; color: #ffffff">Traffic map</span>
+<span style="color: #b4bdc2; font-size: 16px; flex-grow: 1">Live traffic on a TomTom map, with a quota-aware refresh schedule.</span>
+<span style="font-family: 'IBM Plex Mono', Consolas, monospace; font-size: 13px; color: var(--accent)">Screenshots and details →</span>
+</button>
+
+<button type="button" class="tile-card" aria-haspopup="dialog" data-fam="2" data-tile="1" style="font: inherit; text-align: left; cursor: pointer; background: #171c20; border: 1px solid #2a3237; border-radius: 8px; padding: 24px; display: flex; flex-direction: column; gap: 10px; color: #e9edef">
+<span style="font-family: 'Bricolage Grotesque', 'Trebuchet MS', sans-serif; font-weight: 700; font-size: 22px; color: #ffffff">Commute time</span>
+<span style="color: #b4bdc2; font-size: 16px; flex-grow: 1">Real driving time, gap with the usual, suggested departure.</span>
+<span style="font-family: 'IBM Plex Mono', Consolas, monospace; font-size: 13px; color: var(--accent)">Screenshots and details →</span>
+</button>
+
+<button type="button" class="tile-card" aria-haspopup="dialog" data-fam="2" data-tile="2" style="font: inherit; text-align: left; cursor: pointer; background: #171c20; border: 1px solid #2a3237; border-radius: 8px; padding: 24px; display: flex; flex-direction: column; gap: 10px; color: #e9edef">
+<span style="font-family: 'Bricolage Grotesque', 'Trebuchet MS', sans-serif; font-weight: 700; font-size: 22px; color: #ffffff">Planes Overhead</span>
+<span style="color: #b4bdc2; font-size: 16px; flex-grow: 1">Live aircraft on a map, around where you live.</span>
+<span style="font-family: 'IBM Plex Mono', Consolas, monospace; font-size: 13px; color: var(--accent)">Screenshots and details →</span>
+</button>
+
+</div>
+</section>
+<section role="tabpanel" data-panel="3" hidden style="display: flex; flex-direction: column; gap: 20px">
+<div style="display: flex; flex-direction: column; gap: 6px">
+<h2 style="margin: 0; font-family: 'Bricolage Grotesque', 'Trebuchet MS', sans-serif; font-weight: 700; font-size: 30px; color: #ffffff">Home &amp; energy</h2>
+<p style="margin: 0; color: #b4bdc2">What is happening inside the home.</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); gap: 16px">
+
+<button type="button" class="tile-card" aria-haspopup="dialog" data-fam="3" data-tile="0" style="font: inherit; text-align: left; cursor: pointer; background: #171c20; border: 1px solid #2a3237; border-radius: 8px; padding: 24px; display: flex; flex-direction: column; gap: 10px; color: #e9edef">
+<span style="font-family: 'Bricolage Grotesque', 'Trebuchet MS', sans-serif; font-weight: 700; font-size: 22px; color: #ffffff">Tempo colour</span>
+<span style="color: #b4bdc2; font-size: 16px; flex-grow: 1">Today's colour of EDF's Tempo tariff, readable across the room.</span>
+<span style="font-family: 'IBM Plex Mono', Consolas, monospace; font-size: 13px; color: var(--accent)">Screenshots and details →</span>
+</button>
+
+<button type="button" class="tile-card" aria-haspopup="dialog" data-fam="3" data-tile="1" style="font: inherit; text-align: left; cursor: pointer; background: #171c20; border: 1px solid #2a3237; border-radius: 8px; padding: 24px; display: flex; flex-direction: column; gap: 10px; color: #e9edef">
+<span style="font-family: 'Bricolage Grotesque', 'Trebuchet MS', sans-serif; font-weight: 700; font-size: 22px; color: #ffffff">Home Assistant</span>
+<span style="color: #b4bdc2; font-size: 16px; flex-grow: 1">Your entities live: temperatures, doors, consumption. Read-only.</span>
+<span style="font-family: 'IBM Plex Mono', Consolas, monospace; font-size: 13px; color: var(--accent)">Screenshots and details →</span>
+</button>
+
+<button type="button" class="tile-card" aria-haspopup="dialog" data-fam="3" data-tile="2" style="font: inherit; text-align: left; cursor: pointer; background: #171c20; border: 1px solid #2a3237; border-radius: 8px; padding: 24px; display: flex; flex-direction: column; gap: 10px; color: #e9edef">
+<span style="font-family: 'Bricolage Grotesque', 'Trebuchet MS', sans-serif; font-weight: 700; font-size: 22px; color: #ffffff">Bambu Lab 3D printer</span>
+<span style="color: #b4bdc2; font-size: 16px; flex-grow: 1">Progress, stage, finish time, temperatures and spools of the current print.</span>
+<span style="font-family: 'IBM Plex Mono', Consolas, monospace; font-size: 13px; color: var(--accent)">Screenshots and details →</span>
+</button>
+
+</div>
+</section>
+<section role="tabpanel" data-panel="4" hidden style="display: flex; flex-direction: column; gap: 20px">
+<div style="display: flex; flex-direction: column; gap: 6px">
+<h2 style="margin: 0; font-family: 'Bricolage Grotesque', 'Trebuchet MS', sans-serif; font-weight: 700; font-size: 30px; color: #ffffff">Personal</h2>
+<p style="margin: 0; color: #b4bdc2">Your calendar, your mail, your notes.</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); gap: 16px">
+
+<button type="button" class="tile-card" aria-haspopup="dialog" data-fam="4" data-tile="0" style="font: inherit; text-align: left; cursor: pointer; background: #171c20; border: 1px solid #2a3237; border-radius: 8px; padding: 24px; display: flex; flex-direction: column; gap: 10px; color: #e9edef">
+<span style="font-family: 'Bricolage Grotesque', 'Trebuchet MS', sans-serif; font-weight: 700; font-size: 22px; color: #ffffff">Calendar</span>
+<span style="color: #b4bdc2; font-size: 16px; flex-grow: 1">Several calendars merged, each in its own colour.</span>
+<span style="font-family: 'IBM Plex Mono', Consolas, monospace; font-size: 13px; color: var(--accent)">Screenshots and details →</span>
+</button>
+
+<button type="button" class="tile-card" aria-haspopup="dialog" data-fam="4" data-tile="1" style="font: inherit; text-align: left; cursor: pointer; background: #171c20; border: 1px solid #2a3237; border-radius: 8px; padding: 24px; display: flex; flex-direction: column; gap: 10px; color: #e9edef">
+<span style="font-family: 'Bricolage Grotesque', 'Trebuchet MS', sans-serif; font-weight: 700; font-size: 22px; color: #ffffff">Mailbox</span>
+<span style="color: #b4bdc2; font-size: 16px; flex-grow: 1">The latest messages from your IMAP mailbox, readable on tap.</span>
+<span style="font-family: 'IBM Plex Mono', Consolas, monospace; font-size: 13px; color: var(--accent)">Screenshots and details →</span>
+</button>
+
+<button type="button" class="tile-card" aria-haspopup="dialog" data-fam="4" data-tile="2" style="font: inherit; text-align: left; cursor: pointer; background: #171c20; border: 1px solid #2a3237; border-radius: 8px; padding: 24px; display: flex; flex-direction: column; gap: 10px; color: #e9edef">
+<span style="font-family: 'Bricolage Grotesque', 'Trebuchet MS', sans-serif; font-weight: 700; font-size: 22px; color: #ffffff">Notes</span>
+<span style="color: #b4bdc2; font-size: 16px; flex-grow: 1">Markdown-lite notes, checklists, sticky-note colours.</span>
+<span style="font-family: 'IBM Plex Mono', Consolas, monospace; font-size: 13px; color: var(--accent)">Screenshots and details →</span>
+</button>
+
+</div>
+</section>
+<section role="tabpanel" data-panel="5" hidden style="display: flex; flex-direction: column; gap: 20px">
+<div style="display: flex; flex-direction: column; gap: 6px">
+<h2 style="margin: 0; font-family: 'Bricolage Grotesque', 'Trebuchet MS', sans-serif; font-weight: 700; font-size: 30px; color: #ffffff">Entertainment</h2>
+<p style="margin: 0; color: #b4bdc2">Television, videos and photos.</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); gap: 16px">
+
+<button type="button" class="tile-card" aria-haspopup="dialog" data-fam="5" data-tile="0" style="font: inherit; text-align: left; cursor: pointer; background: #171c20; border: 1px solid #2a3237; border-radius: 8px; padding: 24px; display: flex; flex-direction: column; gap: 10px; color: #e9edef">
+<span style="font-family: 'Bricolage Grotesque', 'Trebuchet MS', sans-serif; font-weight: 700; font-size: 22px; color: #ffffff">TV guide</span>
+<span style="color: #b4bdc2; font-size: 16px; flex-grow: 1">French DTT and Canal+ turnkey, and close to 400 channels in advanced mode.</span>
+<span style="font-family: 'IBM Plex Mono', Consolas, monospace; font-size: 13px; color: var(--accent)">Screenshots and details →</span>
+</button>
+
+<button type="button" class="tile-card" aria-haspopup="dialog" data-fam="5" data-tile="1" style="font: inherit; text-align: left; cursor: pointer; background: #171c20; border: 1px solid #2a3237; border-radius: 8px; padding: 24px; display: flex; flex-direction: column; gap: 10px; color: #e9edef">
+<span style="font-family: 'Bricolage Grotesque', 'Trebuchet MS', sans-serif; font-weight: 700; font-size: 22px; color: #ffffff">TV channels</span>
+<span style="color: #b4bdc2; font-size: 16px; flex-grow: 1">A player for your IPTV playlist, with recording of the channel you watch.</span>
+<span style="font-family: 'IBM Plex Mono', Consolas, monospace; font-size: 13px; color: var(--accent)">Screenshots and details →</span>
+</button>
+
+<button type="button" class="tile-card" aria-haspopup="dialog" data-fam="5" data-tile="2" style="font: inherit; text-align: left; cursor: pointer; background: #171c20; border: 1px solid #2a3237; border-radius: 8px; padding: 24px; display: flex; flex-direction: column; gap: 10px; color: #e9edef">
+<span style="font-family: 'Bricolage Grotesque', 'Trebuchet MS', sans-serif; font-weight: 700; font-size: 22px; color: #ffffff">TV recordings</span>
+<span style="color: #b4bdc2; font-size: 16px; flex-grow: 1">What is recording, the free space left, and the recordings already made.</span>
+<span style="font-family: 'IBM Plex Mono', Consolas, monospace; font-size: 13px; color: var(--accent)">Screenshots and details →</span>
+</button>
+
+<button type="button" class="tile-card" aria-haspopup="dialog" data-fam="5" data-tile="3" style="font: inherit; text-align: left; cursor: pointer; background: #171c20; border: 1px solid #2a3237; border-radius: 8px; padding: 24px; display: flex; flex-direction: column; gap: 10px; color: #e9edef">
+<span style="font-family: 'Bricolage Grotesque', 'Trebuchet MS', sans-serif; font-weight: 700; font-size: 22px; color: #ffffff">YouTube</span>
+<span style="color: #b4bdc2; font-size: 16px; flex-grow: 1">A video, a playlist or a channel's latest videos.</span>
+<span style="font-family: 'IBM Plex Mono', Consolas, monospace; font-size: 13px; color: var(--accent)">Screenshots and details →</span>
+</button>
+
+<button type="button" class="tile-card" aria-haspopup="dialog" data-fam="5" data-tile="4" style="font: inherit; text-align: left; cursor: pointer; background: #171c20; border: 1px solid #2a3237; border-radius: 8px; padding: 24px; display: flex; flex-direction: column; gap: 10px; color: #e9edef">
+<span style="font-family: 'Bricolage Grotesque', 'Trebuchet MS', sans-serif; font-weight: 700; font-size: 22px; color: #ffffff">Slideshow</span>
+<span style="color: #b4bdc2; font-size: 16px; flex-grow: 1">Your photos from a folder, a NAS, a USB key, WebDAV or URLs.</span>
+<span style="font-family: 'IBM Plex Mono', Consolas, monospace; font-size: 13px; color: var(--accent)">Screenshots and details →</span>
+</button>
+
+</div>
+</section>
+<section role="tabpanel" data-panel="6" hidden style="display: flex; flex-direction: column; gap: 20px">
+<div style="display: flex; flex-direction: column; gap: 6px">
+<h2 style="margin: 0; font-family: 'Bricolage Grotesque', 'Trebuchet MS', sans-serif; font-weight: 700; font-size: 30px; color: #ffffff">Sport</h2>
+<p style="margin: 0; color: #b4bdc2">Scores, schedules and standings.</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); gap: 16px">
+
+<button type="button" class="tile-card" aria-haspopup="dialog" data-fam="6" data-tile="0" style="font: inherit; text-align: left; cursor: pointer; background: #171c20; border: 1px solid #2a3237; border-radius: 8px; padding: 24px; display: flex; flex-direction: column; gap: 10px; color: #e9edef">
+<span style="font-family: 'Bricolage Grotesque', 'Trebuchet MS', sans-serif; font-weight: 700; font-size: 22px; color: #ffffff">Motorsport schedule</span>
+<span style="color: #b4bdc2; font-size: 16px; flex-grow: 1">The full session timetable of an F1 or MotoGP race weekend.</span>
+<span style="font-family: 'IBM Plex Mono', Consolas, monospace; font-size: 13px; color: var(--accent)">Screenshots and details →</span>
+</button>
+
+<button type="button" class="tile-card" aria-haspopup="dialog" data-fam="6" data-tile="1" style="font: inherit; text-align: left; cursor: pointer; background: #171c20; border: 1px solid #2a3237; border-radius: 8px; padding: 24px; display: flex; flex-direction: column; gap: 10px; color: #e9edef">
+<span style="font-family: 'Bricolage Grotesque', 'Trebuchet MS', sans-serif; font-weight: 700; font-size: 22px; color: #ffffff">Live sports scores</span>
+<span style="color: #b4bdc2; font-size: 16px; flex-grow: 1">Scores of the games in progress.</span>
+<span style="font-family: 'IBM Plex Mono', Consolas, monospace; font-size: 13px; color: var(--accent)">Screenshots and details →</span>
+</button>
+
+<button type="button" class="tile-card" aria-haspopup="dialog" data-fam="6" data-tile="2" style="font: inherit; text-align: left; cursor: pointer; background: #171c20; border: 1px solid #2a3237; border-radius: 8px; padding: 24px; display: flex; flex-direction: column; gap: 10px; color: #e9edef">
+<span style="font-family: 'Bricolage Grotesque', 'Trebuchet MS', sans-serif; font-weight: 700; font-size: 22px; color: #ffffff">League standings</span>
+<span style="color: #b4bdc2; font-size: 16px; flex-grow: 1">Football, rugby and NBA standings.</span>
+<span style="font-family: 'IBM Plex Mono', Consolas, monospace; font-size: 13px; color: var(--accent)">Screenshots and details →</span>
+</button>
+
+</div>
+</section>
+<section role="tabpanel" data-panel="7" hidden style="display: flex; flex-direction: column; gap: 20px">
+<div style="display: flex; flex-direction: column; gap: 6px">
+<h2 style="margin: 0; font-family: 'Bricolage Grotesque', 'Trebuchet MS', sans-serif; font-weight: 700; font-size: 30px; color: #ffffff">System &amp; Network</h2>
+<p style="margin: 0; color: #b4bdc2">The machine, the connection and the services you rely on.</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); gap: 16px">
+
+<button type="button" class="tile-card" aria-haspopup="dialog" data-fam="7" data-tile="0" style="font: inherit; text-align: left; cursor: pointer; background: #171c20; border: 1px solid #2a3237; border-radius: 8px; padding: 24px; display: flex; flex-direction: column; gap: 10px; color: #e9edef">
+<span style="font-family: 'Bricolage Grotesque', 'Trebuchet MS', sans-serif; font-weight: 700; font-size: 22px; color: #ffffff">System status</span>
+<span style="color: #b4bdc2; font-size: 16px; flex-grow: 1">CPU, memory, disk, temperature and IP addresses.</span>
+<span style="font-family: 'IBM Plex Mono', Consolas, monospace; font-size: 13px; color: var(--accent)">Screenshots and details →</span>
+</button>
+
+<button type="button" class="tile-card" aria-haspopup="dialog" data-fam="7" data-tile="1" style="font: inherit; text-align: left; cursor: pointer; background: #171c20; border: 1px solid #2a3237; border-radius: 8px; padding: 24px; display: flex; flex-direction: column; gap: 10px; color: #e9edef">
+<span style="font-family: 'Bricolage Grotesque', 'Trebuchet MS', sans-serif; font-weight: 700; font-size: 22px; color: #ffffff">Internet health</span>
+<span style="color: #b4bdc2; font-size: 16px; flex-grow: 1">Continuous latency, jitter and packet loss, with outages flagged.</span>
+<span style="font-family: 'IBM Plex Mono', Consolas, monospace; font-size: 13px; color: var(--accent)">Screenshots and details →</span>
+</button>
+
+<button type="button" class="tile-card" aria-haspopup="dialog" data-fam="7" data-tile="2" style="font: inherit; text-align: left; cursor: pointer; background: #171c20; border: 1px solid #2a3237; border-radius: 8px; padding: 24px; display: flex; flex-direction: column; gap: 10px; color: #e9edef">
+<span style="font-family: 'Bricolage Grotesque', 'Trebuchet MS', sans-serif; font-weight: 700; font-size: 22px; color: #ffffff">Network scan</span>
+<span style="color: #b4bdc2; font-size: 16px; flex-grow: 1">The active hosts on your local network, with friendly names.</span>
+<span style="font-family: 'IBM Plex Mono', Consolas, monospace; font-size: 13px; color: var(--accent)">Screenshots and details →</span>
+</button>
+
+<button type="button" class="tile-card" aria-haspopup="dialog" data-fam="7" data-tile="3" style="font: inherit; text-align: left; cursor: pointer; background: #171c20; border: 1px solid #2a3237; border-radius: 8px; padding: 24px; display: flex; flex-direction: column; gap: 10px; color: #e9edef">
+<span style="font-family: 'Bricolage Grotesque', 'Trebuchet MS', sans-serif; font-weight: 700; font-size: 22px; color: #ffffff">Network watch</span>
+<span style="color: #b4bdc2; font-size: 16px; flex-grow: 1">Checks that your hosts and services answer, and logs each failure.</span>
+<span style="font-family: 'IBM Plex Mono', Consolas, monospace; font-size: 13px; color: var(--accent)">Screenshots and details →</span>
+</button>
+
+<button type="button" class="tile-card" aria-haspopup="dialog" data-fam="7" data-tile="4" style="font: inherit; text-align: left; cursor: pointer; background: #171c20; border: 1px solid #2a3237; border-radius: 8px; padding: 24px; display: flex; flex-direction: column; gap: 10px; color: #e9edef">
+<span style="font-family: 'Bricolage Grotesque', 'Trebuchet MS', sans-serif; font-weight: 700; font-size: 22px; color: #ffffff">Service status</span>
+<span style="color: #b4bdc2; font-size: 16px; flex-grow: 1">The status pages of GitHub, Cloudflare, npm, Docker Hub and more.</span>
+<span style="font-family: 'IBM Plex Mono', Consolas, monospace; font-size: 13px; color: var(--accent)">Screenshots and details →</span>
+</button>
+
+<button type="button" class="tile-card" aria-haspopup="dialog" data-fam="7" data-tile="5" style="font: inherit; text-align: left; cursor: pointer; background: #171c20; border: 1px solid #2a3237; border-radius: 8px; padding: 24px; display: flex; flex-direction: column; gap: 10px; color: #e9edef">
+<span style="font-family: 'Bricolage Grotesque', 'Trebuchet MS', sans-serif; font-weight: 700; font-size: 22px; color: #ffffff">AI usage</span>
+<span style="color: #b4bdc2; font-size: 16px; flex-grow: 1">Your Claude account limits, with reset times.</span>
+<span style="font-family: 'IBM Plex Mono', Consolas, monospace; font-size: 13px; color: var(--accent)">Screenshots and details →</span>
+</button>
+
+</div>
+</section>
+<section role="tabpanel" data-panel="8" hidden style="display: flex; flex-direction: column; gap: 20px">
+<div style="display: flex; flex-direction: column; gap: 6px">
+<h2 style="margin: 0; font-family: 'Bricolage Grotesque', 'Trebuchet MS', sans-serif; font-weight: 700; font-size: 30px; color: #ffffff">Page design</h2>
+<p style="margin: 0; color: #b4bdc2">Style tiles that show no data, there to compose a page.</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); gap: 16px">
+
+<button type="button" class="tile-card" aria-haspopup="dialog" data-fam="8" data-tile="0" style="font: inherit; text-align: left; cursor: pointer; background: #171c20; border: 1px solid #2a3237; border-radius: 8px; padding: 24px; display: flex; flex-direction: column; gap: 10px; color: #e9edef">
+<span style="font-family: 'Bricolage Grotesque', 'Trebuchet MS', sans-serif; font-weight: 700; font-size: 22px; color: #ffffff">Text</span>
+<span style="color: #b4bdc2; font-size: 16px; flex-grow: 1">A page title or a caption, sized to fit the tile.</span>
+<span style="font-family: 'IBM Plex Mono', Consolas, monospace; font-size: 13px; color: var(--accent)">Screenshots and details →</span>
+</button>
+
+<button type="button" class="tile-card" aria-haspopup="dialog" data-fam="8" data-tile="1" style="font: inherit; text-align: left; cursor: pointer; background: #171c20; border: 1px solid #2a3237; border-radius: 8px; padding: 24px; display: flex; flex-direction: column; gap: 10px; color: #e9edef">
+<span style="font-family: 'Bricolage Grotesque', 'Trebuchet MS', sans-serif; font-weight: 700; font-size: 22px; color: #ffffff">Logo / Image</span>
+<span style="color: #b4bdc2; font-size: 16px; flex-grow: 1">An image uploaded from the tile, framed and positioned by hand.</span>
+<span style="font-family: 'IBM Plex Mono', Consolas, monospace; font-size: 13px; color: var(--accent)">Screenshots and details →</span>
+</button>
+
+</div>
+</section>
+<section role="tabpanel" data-panel="9" hidden style="display: flex; flex-direction: column; gap: 20px">
+<div style="display: flex; flex-direction: column; gap: 6px">
+<h2 style="margin: 0; font-family: 'Bricolage Grotesque', 'Trebuchet MS', sans-serif; font-weight: 700; font-size: 30px; color: #ffffff">Miscellaneous</h2>
+<p style="margin: 0; color: #b4bdc2">The time, timers and a little wit.</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); gap: 16px">
+
+<button type="button" class="tile-card" aria-haspopup="dialog" data-fam="9" data-tile="0" style="font: inherit; text-align: left; cursor: pointer; background: #171c20; border: 1px solid #2a3237; border-radius: 8px; padding: 24px; display: flex; flex-direction: column; gap: 10px; color: #e9edef">
+<span style="font-family: 'Bricolage Grotesque', 'Trebuchet MS', sans-serif; font-weight: 700; font-size: 22px; color: #ffffff">Clock</span>
+<span style="color: #b4bdc2; font-size: 16px; flex-grow: 1">Digital or analog, with an automatic day/night background.</span>
+<span style="font-family: 'IBM Plex Mono', Consolas, monospace; font-size: 13px; color: var(--accent)">Screenshots and details →</span>
+</button>
+
+<button type="button" class="tile-card" aria-haspopup="dialog" data-fam="9" data-tile="1" style="font: inherit; text-align: left; cursor: pointer; background: #171c20; border: 1px solid #2a3237; border-radius: 8px; padding: 24px; display: flex; flex-direction: column; gap: 10px; color: #e9edef">
+<span style="font-family: 'Bricolage Grotesque', 'Trebuchet MS', sans-serif; font-weight: 700; font-size: 22px; color: #ffffff">Countdown</span>
+<span style="color: #b4bdc2; font-size: 16px; flex-grow: 1">Timer with screen flash, beep and remote notification.</span>
+<span style="font-family: 'IBM Plex Mono', Consolas, monospace; font-size: 13px; color: var(--accent)">Screenshots and details →</span>
+</button>
+
+<button type="button" class="tile-card" aria-haspopup="dialog" data-fam="9" data-tile="2" style="font: inherit; text-align: left; cursor: pointer; background: #171c20; border: 1px solid #2a3237; border-radius: 8px; padding: 24px; display: flex; flex-direction: column; gap: 10px; color: #e9edef">
+<span style="font-family: 'Bricolage Grotesque', 'Trebuchet MS', sans-serif; font-weight: 700; font-size: 22px; color: #ffffff">Quote of the day</span>
+<span style="color: #b4bdc2; font-size: 16px; flex-grow: 1">Over 400 offline quotes, plus your own.</span>
+<span style="font-family: 'IBM Plex Mono', Consolas, monospace; font-size: 13px; color: var(--accent)">Screenshots and details →</span>
+</button>
+
+</div>
+</section>
+
+
+<div style="display: flex; flex-wrap: wrap; gap: 14px; align-items: center">
+<a href="https://github.com/jihemezes/piboard/releases" style="text-decoration: none; background: var(--accent); color: #10130f; font-weight: 600; border-radius: 6px; padding: 0 24px; min-height: 52px; display: flex; align-items: center">Download PiBoard</a>
+<a href="use-cases.html" style="text-decoration: none; color: #ffffff; border: 1px solid #3a4348; border-radius: 6px; padding: 0 24px; min-height: 52px; display: flex; align-items: center; font-weight: 500">See the use cases</a>
+</div>
+
+</main>
+
+
+
+<footer style="border-top: 1px solid #252c30">
+<div style="max-width: 1200px; margin: 0 auto; padding: 28px 24px; box-sizing: border-box; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px 24px; font-size: 15px; color: #9aa3a8">
+<div>PiBoard — designed and built in Toulouse by Jean-Michel. MIT license.</div>
+<div style="display: flex; flex-wrap: wrap; gap: 8px 24px">
+<a href="contact.html" style="color: #b4bdc2">Contact</a>
+<a href="legal.html" style="color: #b4bdc2">Legal notice</a>
+<a href="https://github.com/jihemezes/piboard" style="color: #b4bdc2">GitHub</a>
+<a href="https://ko-fi.com/jihemezes" style="color: #b4bdc2">Ko-fi</a>
+</div>
+</div>
+</footer>
+
+</div>
+<div id="tile-modal" class="modal" hidden>
+<button type="button" class="modal-backdrop" aria-label="Close" data-close></button>
+<div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="tile-modal-title">
+<div class="modal-head"><div><div class="modal-fam" id="tile-modal-fam"></div><h2 id="tile-modal-title"></h2></div>
+<button type="button" class="modal-x" aria-label="Close" data-close><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 3l12 12M15 3L3 15"></path></svg></button></div>
+<div class="modal-shots" id="tile-modal-shots"></div>
+<div class="modal-text" id="tile-modal-text"></div>
+<div class="modal-req" id="tile-modal-req"></div>
+</div></div>
+<script>window.PIBOARD_CATALOG=[{"label":"Weather","tiles":[{"id":"weather","name":"Weather","paras":["The tile shows current conditions and the forecast, over a background photo that follows the weather. Tomorrow's forecast lays itself out to fit the shape you give the tile.","A setting lets you pick the forecast model: automatic best match, or a national model such as Météo-France (ARPEGE/AROME), often the most accurate for a location in France."],"req":"Source: Open-Meteo · no API key"},{"id":"radar","name":"Weather Radar","paras":["The last hours of precipitation play in a loop over a map centred on the place you choose. Handy to see whether the shower is coming or going before you head out."],"req":"Source: RainViewer · no API key"},{"id":"airquality","name":"Air Quality","paras":["The European air quality index and pollen levels for your town, readable at a glance."],"req":"No API key"},{"id":"astronomy","name":"Astronomy","paras":["The moon phase, the next visible passes of the International Space Station and the planets you can observe tonight.","The moon and planets are computed locally: that part works with no network."],"req":"Moon and planets computed locally"}]},{"label":"Information","tiles":[{"id":"rss","name":"RSS feed","paras":["Subscribe the tile to your RSS or Atom feeds: headlines scroll automatically.","Tapping a headline opens a reader-mode popup with the article text extracted from the original page. You read what matters without leaving the board."],"req":"Formats: RSS and Atom"},{"id":"webview","name":"Web page","paras":["Shows a web page in a frame, with adjustable zoom and periodic reload. Useful for a webcam, an existing dashboard or an online map."],"req":"Some sites refuse to be framed"},{"id":"crypto","name":"Crypto prices","paras":["Prices for your cryptocurrencies with their logos. A tap opens the chart over 24 hours, 7 days, 30 days or 1 year.","If the main source stops answering, the tile switches to the fallback source."],"req":"Sources: Binance, CoinGecko as fallback"},{"id":"stocks","name":"Stocks & indices","paras":["Pick your instruments from a per-exchange list — CAC 40, DAX and Dow Jones constituents are included — or type any symbol.","An indicator flags closed markets, accounting for each exchange's time zone. On tap, the chart ranges from intraday to 5 years."],"req":"Sources: Stooq, Yahoo as fallback"}]},{"label":"Getting around","tiles":[{"id":"traffic","name":"Traffic map","paras":["A live road-traffic map, on TomTom's official tiles.","The refresh schedule is designed to stay within the free quota: the map updates more often at the hours that matter to you."],"req":"Source: TomTom · your API key"},{"id":"commute","name":"Commute time","paras":["Live driving time with real traffic, compared with the usual time.","Give a desired arrival time and the tile suggests when to leave. Up to 5 extra trips, each with its own name."],"req":"Real traffic"},{"id":"planes","name":"Planes Overhead","paras":["The aircraft flying over your area, live on a real map, thanks to a free community ADS-B network."],"req":"Free community ADS-B network"}]},{"label":"Home & energy","tiles":[{"id":"tempo","name":"Tempo colour","paras":["Today's blue, white or red colour as a full-tile band, tomorrow's as soon as it is published, and the remaining days per colour.","The Tempo day, which runs from 6am to 6am, is handled correctly."],"req":"EDF Tempo tariff (France)"},{"id":"homeassistant","name":"Home Assistant","paras":["A view of your Home Assistant entities — room temperatures, open doors, consumption — updated live over WebSocket.","The tile is strictly read-only: it calls no service and cannot change anything in your home."],"req":"Your Home Assistant instance"},{"id":"bambu","name":"Bambu Lab 3D printer","paras":["Live progress, current stage, estimated finish time, bed, nozzle and chamber temperatures, AMS spools and humidity, HMS errors.","Connects over your local network or your Bambu account. Read-only: no command is ever sent to the printer. As it shrinks, the tile simplifies down to progress alone."],"req":"Local network or Bambu account"}]},{"label":"Personal","tiles":[{"id":"calendar","name":"Calendar","paras":["Merges several iCal/.ics calendars, each in its own colour, as a list or a week grid, recurring events included.","Works with iPhone, Google, Nextcloud and Outlook calendars."],"req":"Format: iCal / .ics"},{"id":"mailbox","name":"Mailbox","paras":["The latest messages from an IMAP mailbox. A tap opens the message to read it.","PiBoard stores nothing and the tile is strictly read-only: it never deletes, moves or sends anything."],"req":"Protocol: IMAP · read-only"},{"id":"notes","name":"Notes","paras":["A reminder pad on the board: Markdown-lite, checklists, sticky-note colours."],"req":"No external source"}]},{"label":"Entertainment","tiles":[{"id":"teleprog","name":"TV guide","paras":["Tonight's listings for French DTT and Canal+, with nothing to configure.","Advanced mode extends the guide to close to 400 channels: you pick the ones you care about and the tile shows only those."],"req":"DTT and Canal+ · close to 400 channels in advanced mode"},{"id":"iptv","name":"TV channels","paras":["A plain player for an IPTV .m3u playlist. PiBoard provides no channels and no content whatsoever: the tile only works with a playlist you already have.","It records the channel you are watching to a file, without opening a second connection to the provider, with conversion to .mp4, resumption after a dropped feed and duration and free-space guards."],"req":"Your .m3u playlist"},{"id":"iptvrec","name":"TV recordings","paras":["The companion to TV channels: the recording in progress (channel, elapsed time, file size), the free space left and the recordings already made, convertible to .mp4 or deletable.","It keeps watching even when the player tile is closed or sits on another page."],"req":"Used with the TV channels tile"},{"id":"youtube","name":"YouTube","paras":["A video, a playlist, a channel's latest videos or a pasted queue, in YouTube's official privacy-enhanced player.","A full-screen search window, with sorting and paging, is available with your own free API key."],"req":"Search: your free YouTube API key"},{"id":"slideshow","name":"Slideshow","paras":["Photos come from an upload in the tile, a local or NAS folder, a USB key, a WebDAV share or a list of URLs. No web server is needed.","Landscape and portrait photos are handled separately."],"req":"No web server needed"}]},{"label":"Sport","tiles":[{"id":"motorsport","name":"Motorsport schedule","paras":["Every session of the race weekend — practice, qualifying, race — for F1 and MotoGP."],"req":"F1 and MotoGP"},{"id":"sportscore","name":"Live sports scores","paras":["Live scores for the competitions you follow."],"req":"Source: ESPN"},{"id":"standings","name":"League standings","paras":["The current table of your league: football, rugby or NBA. A custom league is added with its competition code."],"req":"Source: ESPN"}]},{"label":"System & Network","tiles":[{"id":"system","name":"System status","paras":["CPU, memory, disk and temperature, with the network adapters' IP addresses.","On tap: a full network configuration window (gateway, DHCP, lease, DNS, domain suffix) and live usage charts."],"req":"Temperature unavailable on Windows"},{"id":"speedtest","name":"Internet health","paras":["The server continuously measures latency, jitter and packet loss, and draws a 24-hour curve with outages flagged.","Periodic, capped speed tests complete the picture, with on-demand CSV archiving."],"req":"Measured by the PiBoard server"},{"id":"networkscan","name":"Network scan","paras":["A ping of the local subnet, cross-checked against the ARP table, lists the active hosts.","You give them friendly names, which export to and import from a CSV file."],"req":"Local network"},{"id":"hostwatch","name":"Network watch","paras":["Watches the hosts and services you rely on — a NAS, a Raspberry Pi, an Umbrel server, or remote services.","Ping, TCP port or HTTP: the method is picked automatically from what you type. Each failure is logged with its reason and duration."],"req":"Ping, TCP or HTTP"},{"id":"servicestatus","name":"Service status","paras":["An online service's overall state and, when something is wrong, only the affected components, the incident with its stage and age, and the latest message published.","Works with any Atlassian Statuspage, no key and no account. Checks speed up by themselves as soon as an incident is declared."],"req":"No key, no account"},{"id":"aiusage","name":"AI usage","paras":["Progress bars for your Claude account's 5-hour and 7-day windows, with reset times.","Percentages come from the provider: nothing is estimated."],"req":"Your Claude account"}]},{"label":"Page design","tiles":[{"id":"text","name":"Text","paras":["A title or a caption: font, size that fits the tile or stays fixed, weight, colour, position.","With a transparent background, it titles a page with no visible frame."],"req":"Style tile"},{"id":"image","name":"Logo / Image","paras":["An image stored on the PiBoard machine itself, uploaded from the tile: framing, position, rounding, opacity, optional link."],"req":"Style tile"}]},{"label":"Miscellaneous","tiles":[{"id":"clock","name":"Clock","paras":["A digital or analog clock, with an automatic day/night background you can recolour.","Optional: the French name day, and a side-by-side time and date layout."],"req":"No external source"},{"id":"countdown","name":"Countdown","paras":["A countdown or a timer. When it ends: screen flash, beep, and a webhook to notify you remotely."],"req":"Optional webhook"},{"id":"quote","name":"Quote of the day","paras":["Over 400 checked quotes, thoughts and proverbs, available offline, with text that fits itself to the tile.","You add your own quotes. No repeat until everything has been shown; tap for the next one, long-press for favourites."],"req":"Offline"}]}];window.PIBOARD_IMG="../images/tuiles/";window.PIBOARD_MISSING="[SCREENSHOT — add images/tuiles/";</script>
+<script src="../site.js"></script>
+</body>
+</html>
