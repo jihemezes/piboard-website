@@ -1,0 +1,41 @@
+Captures d'ecran des tuiles / Tile screenshots
+Deposez ici deux images par tuile, au format JPEG, ratio 16:10 conseille (ex. 1280x800).
+Le popup du catalogue les affiche automatiquement ; tant qu'un fichier manque, un emplacement vide le signale.
+Drop two JPEG images per tile here, 16:10 recommended. The catalogue popup picks them up automatically.
+
+weather-1.jpg, weather-2.jpg
+radar-1.jpg, radar-2.jpg
+airquality-1.jpg, airquality-2.jpg
+astronomy-1.jpg, astronomy-2.jpg
+rss-1.jpg, rss-2.jpg
+webview-1.jpg, webview-2.jpg
+crypto-1.jpg, crypto-2.jpg
+stocks-1.jpg, stocks-2.jpg
+traffic-1.jpg, traffic-2.jpg
+commute-1.jpg, commute-2.jpg
+planes-1.jpg, planes-2.jpg
+tempo-1.jpg, tempo-2.jpg
+homeassistant-1.jpg, homeassistant-2.jpg
+bambu-1.jpg, bambu-2.jpg
+calendar-1.jpg, calendar-2.jpg
+mailbox-1.jpg, mailbox-2.jpg
+notes-1.jpg, notes-2.jpg
+teleprog-1.jpg, teleprog-2.jpg
+iptv-1.jpg, iptv-2.jpg
+iptvrec-1.jpg, iptvrec-2.jpg
+youtube-1.jpg, youtube-2.jpg
+slideshow-1.jpg, slideshow-2.jpg
+motorsport-1.jpg, motorsport-2.jpg
+sportscore-1.jpg, sportscore-2.jpg
+standings-1.jpg, standings-2.jpg
+system-1.jpg, system-2.jpg
+speedtest-1.jpg, speedtest-2.jpg
+networkscan-1.jpg, networkscan-2.jpg
+hostwatch-1.jpg, hostwatch-2.jpg
+servicestatus-1.jpg, servicestatus-2.jpg
+aiusage-1.jpg, aiusage-2.jpg
+text-1.jpg, text-2.jpg
+image-1.jpg, image-2.jpg
+clock-1.jpg, clock-2.jpg
+countdown-1.jpg, countdown-2.jpg
+quote-1.jpg, quote-2.jpg
