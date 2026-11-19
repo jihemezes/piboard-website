@@ -1,4 +1,10 @@
-/* PiBoard — onglets de familles et popup de detail des tuiles. */
+/* PiBoard — accroches alternees de l'accueil, onglets de familles et popup de detail des tuiles. */
+(function(){
+var h=document.querySelector('[data-punch-seconds]');if(!h)return;
+var spans=h.querySelectorAll('span'),cur=0,secs=+h.dataset.punchSeconds||6;if(spans.length<2)return;
+if(window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches)spans.forEach(function(s){s.style.transition='none';});
+setInterval(function(){spans[cur].style.opacity=0;spans[cur].setAttribute('aria-hidden','true');cur=(cur+1)%spans.length;spans[cur].style.opacity=1;spans[cur].setAttribute('aria-hidden','false');},secs*1000);
+})();
 (function(){
 var cat=window.PIBOARD_CATALOG;if(!cat)return;
 var tabs=document.querySelectorAll('.fam-tab'),panels=document.querySelectorAll('[data-panel]');

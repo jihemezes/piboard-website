@@ -32,7 +32,13 @@
 <section style="max-width: 1200px; margin: 0 auto; padding: 56px 24px 96px; box-sizing: border-box; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(440px, 100%), 1fr)); gap: 56px; align-items: center">
 <div style="display: flex; flex-direction: column; gap: 24px">
 <div style="font-family: 'IBM Plex Mono', Consolas, monospace; font-size: 14px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent)">Self-hosted dashboard</div>
-<h1 style="margin: 0; font-family: 'Bricolage Grotesque', 'Trebuchet MS', sans-serif; font-weight: 700; font-size: clamp(40px, 6vw, 72px); line-height: 1.02; letter-spacing: -0.02em; color: #ffffff; text-wrap: balance">Everything that matters, on one screen.</h1>
+<h1 style="margin: 0; font-family: 'Bricolage Grotesque', 'Trebuchet MS', sans-serif; font-weight: 700; font-size: clamp(40px, 6vw, 72px); line-height: 1.02; letter-spacing: -0.02em; color: #ffffff; text-wrap: balance; display: grid" data-punch-seconds="6">
+
+<span aria-hidden="false" style="grid-area: 1 / 1; opacity: 1; transition: opacity 0.6s ease">Everything that matters, on one screen.</span>
+
+<span aria-hidden="true" style="grid-area: 1 / 1; opacity: 0; transition: opacity 0.6s ease">You needed it, you just didn't know it yet.</span>
+
+</h1>
 <p style="margin: 0; font-size: 20px; color: #b4bdc2; max-width: 34em; text-wrap: pretty">PiBoard is a tile dashboard for Windows, Linux, macOS and Raspberry Pi: weather, traffic, news from RSS feeds, mail, calendar, TV guide, Formula 1 and MotoGP, stocks, network monitoring. 39 tiles to arrange on a wall-mounted touchscreen or on your computer's second monitor.</p>
 <div style="display: flex; flex-wrap: wrap; gap: 14px; align-items: center">
 <a href="https://github.com/jihemezes/piboard/releases" target="_blank" rel="noopener" style="text-decoration: none; background: var(--accent); color: #10130f; font-weight: 600; border-radius: 6px; padding: 0 24px; min-height: 52px; display: flex; align-items: center">Download PiBoard</a>
@@ -290,5 +296,6 @@
 
 </div>
 
+<script src="../site.js"></script>
 </body>
 </html>
