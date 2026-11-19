@@ -116,22 +116,41 @@
 
 <section id="classic" style="border-top: 1px solid #252c30">
 <div style="max-width: 1200px; margin: 0 auto; padding: 88px 24px; box-sizing: border-box; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(440px, 100%), 1fr)); gap: 56px; align-items: center">
-<div aria-hidden="true" style="position: relative; background: #05070a; border: 10px solid #1d2327; border-radius: 14px; aspect-ratio: 16 / 10; box-sizing: border-box; display: flex; overflow: hidden; font-family: 'IBM Plex Mono', Consolas, monospace; font-size: clamp(9px, 1.1vw, 13px); color: #e9edef">
-<div style="flex: 0 0 40%; background: #171c20; border-right: 2px solid var(--accent); padding: 10px; box-sizing: border-box; display: flex; flex-direction: column; gap: 8px">
-<div>Left drawer</div>
-<div style="flex-grow: 1; background: #262e33; border-radius: 5px"></div>
-<div style="flex-grow: 1; background: #262e33; border-radius: 5px"></div>
-<div style="flex-grow: 1; background: #262e33; border-radius: 5px"></div>
+<div style="display: flex; flex-direction: column; gap: 12px">
+<div data-classic="1" style="position: relative; background: #05070a; border: 10px solid #1d2327; border-radius: 14px; aspect-ratio: 16 / 10; box-sizing: border-box; overflow: hidden; font-family: 'IBM Plex Mono', Consolas, monospace; font-size: clamp(9px, 1.1vw, 13px); color: #e9edef">
+<div aria-hidden="true" style="position: absolute; inset: 0; padding: 10px; box-sizing: border-box; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); grid-template-rows: repeat(3, minmax(0, 1fr)); gap: 8px">
+<div style="grid-column: span 2; grid-row: span 3; background: #171c20; border: 1px solid #2a3237; border-radius: 6px; padding: 8px; display: flex; flex-direction: column; gap: 6px; overflow: hidden">
+<div>Traffic map</div>
+<svg viewBox="0 0 300 180" fill="none" stroke-linecap="round" preserveAspectRatio="none" style="flex-grow: 1; width: 100%; min-height: 0"><path d="M0 130 C70 120 90 60 150 70 S250 110 300 40" stroke="#3a4348" stroke-width="10"></path><path d="M40 0 C60 60 120 90 130 180" stroke="#3a4348" stroke-width="7"></path><path d="M0 130 C70 120 90 60 150 70" class="acc-stroke" stroke-width="4"></path><path d="M150 70 C190 76 215 96 240 88" stroke="#ffb454" stroke-width="4"></path></svg>
 </div>
-<div style="flex: 1 1 0; min-width: 0; padding: 10px; box-sizing: border-box; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); grid-template-rows: repeat(3, minmax(0, 1fr)); gap: 8px; opacity: 0.5">
-<div style="grid-column: span 2; grid-row: span 2; background: #20272c; border-radius: 5px; padding: 8px">Board</div>
-<div style="background: #20272c; border-radius: 5px"></div>
-<div style="background: #20272c; border-radius: 5px"></div>
-<div style="grid-column: span 3; background: #20272c; border-radius: 5px"></div>
+<div style="background: #171c20; border: 1px solid #2a3237; border-radius: 6px; padding: 8px">Weather</div>
+<div style="background: #171c20; border: 1px solid #2a3237; border-radius: 6px; padding: 8px">Commute</div>
+<div style="background: #171c20; border: 1px solid #2a3237; border-radius: 6px; padding: 8px">Clock</div>
 </div>
-<div style="position: absolute; top: 0; left: 68%; width: 56px; height: 8px; background: #4a555b; border-radius: 0 0 6px 6px"></div>
-<div style="position: absolute; right: 0; top: 42%; width: 8px; height: 56px; background: #4a555b; border-radius: 6px 0 0 6px"></div>
-<div style="position: absolute; bottom: 0; left: 68%; width: 56px; height: 8px; background: #4a555b; border-radius: 6px 6px 0 0"></div>
+<div data-dim="1" aria-hidden="true" style="position: absolute; inset: 0; background: rgba(5, 7, 10, 0.6); opacity: 1; transition: opacity 0.4s ease; pointer-events: none; z-index: 1"></div>
+<div data-drawer="left" aria-hidden="false" style="position: absolute; top: 0; bottom: 0; left: 0; width: 42%; background: #1b2126; border-right: 2px solid var(--accent); padding: 10px; box-sizing: border-box; display: flex; flex-direction: column; gap: 8px; transform: translateX(0); transition: transform 0.45s ease; z-index: 2">
+<div style="color: var(--accent)">Left drawer</div>
+<div style="flex: 1 1 0; min-height: 0; background: #262e33; border-radius: 5px; padding: 8px; display: flex; align-items: center; justify-content: space-between; gap: 6px; overflow: hidden"><span>Countdown</span><svg viewBox="0 0 24 24" fill="none" stroke-width="3" style="width: 28%; max-width: 40px; flex: none"><circle cx="12" cy="12" r="9" stroke="#3a4348"></circle><path d="M12 3 A9 9 0 1 1 3.5 15" class="acc-stroke" stroke-linecap="round"></path></svg></div>
+<div style="flex: 1 1 0; min-height: 0; background: #262e33; border-radius: 5px; padding: 8px; display: flex; flex-direction: column; gap: 5px; overflow: hidden"><span>Scores</span><span style="height: 6px; width: 80%; background: #3a4348; border-radius: 3px"></span><span style="height: 6px; width: 60%; background: #3a4348; border-radius: 3px"></span></div>
+<div style="flex: 1 1 0; min-height: 0; background: #262e33; border-radius: 5px; padding: 8px; display: flex; flex-direction: column; gap: 5px; overflow: hidden"><span>Notes</span><span style="display: flex; gap: 5px; align-items: center"><span style="width: 8px; height: 8px; border-radius: 2px; background: var(--accent)"></span><span style="height: 6px; width: 60%; background: #3a4348; border-radius: 3px"></span></span><span style="display: flex; gap: 5px; align-items: center"><span style="width: 8px; height: 8px; border-radius: 2px; border: 1px solid #4a555b"></span><span style="height: 6px; width: 45%; background: #3a4348; border-radius: 3px"></span></span></div>
+</div>
+<div data-drawer="top" aria-hidden="true" style="position: absolute; top: 0; left: 0; right: 0; height: 46%; background: #1b2126; border-bottom: 2px solid var(--accent); padding: 10px; box-sizing: border-box; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); grid-template-rows: auto minmax(0, 1fr); gap: 8px; transform: translateY(-100%); transition: transform 0.45s ease; z-index: 2">
+<div style="grid-column: 1 / -1; color: var(--accent)">Top drawer</div>
+<div style="background: #262e33; border-radius: 5px; padding: 8px; overflow: hidden">Clock</div>
+<div style="background: #262e33; border-radius: 5px; padding: 8px; overflow: hidden">Weather</div>
+<div style="background: #262e33; border-radius: 5px; padding: 8px; display: flex; flex-direction: column; gap: 6px; overflow: hidden"><span>Tempo colour</span><span style="display: flex; gap: 4px"><span style="width: 10px; height: 10px; border-radius: 50%; background: #3b82f6"></span><span style="width: 10px; height: 10px; border-radius: 50%; background: #f1f5f9"></span><span style="width: 10px; height: 10px; border-radius: 50%; background: #ef4444"></span></span></div>
+</div>
+<div data-drawer="right" aria-hidden="true" style="position: absolute; top: 0; bottom: 0; right: 0; width: 42%; background: #1b2126; border-left: 2px solid var(--accent); padding: 10px; box-sizing: border-box; display: flex; flex-direction: column; gap: 8px; transform: translateX(100%); transition: transform 0.45s ease; z-index: 2">
+<div style="color: var(--accent)">Right drawer</div>
+<div style="flex: 1 1 0; min-height: 0; background: #262e33; border-radius: 5px; padding: 8px; display: flex; flex-direction: column; gap: 5px; overflow: hidden"><span>RSS feed</span><span style="display: flex; gap: 5px; align-items: center"><span style="width: 18px; height: 6px; border-radius: 3px; background: #6cb8ff"></span><span style="height: 6px; width: 55%; background: #3a4348; border-radius: 3px"></span></span><span style="display: flex; gap: 5px; align-items: center"><span style="width: 18px; height: 6px; border-radius: 3px; background: #ffb454"></span><span style="height: 6px; width: 45%; background: #3a4348; border-radius: 3px"></span></span></div>
+<div style="flex: 1 1 0; min-height: 0; background: #262e33; border-radius: 5px; padding: 8px; display: flex; flex-direction: column; gap: 5px; overflow: hidden"><span>Mailbox</span><span style="height: 6px; width: 75%; background: #3a4348; border-radius: 3px"></span><span style="height: 6px; width: 55%; background: #3a4348; border-radius: 3px"></span></div>
+<div style="flex: 1 1 0; min-height: 0; background: #262e33; border-radius: 5px; padding: 8px; overflow: hidden">Calendar</div>
+</div>
+<button type="button" data-tab="left" aria-label="Left drawer" aria-expanded="true" style="position: absolute; top: 50%; margin-top: -32px; left: 42%; width: 44px; height: 64px; padding: 0; border: 0; background: transparent; cursor: pointer; display: flex; align-items: center; justify-content: flex-start; transition: left 0.45s ease; z-index: 3"><span data-tab-bar="1" style="width: 10px; height: 56px; border-radius: 0 6px 6px 0; background: var(--accent); animation: pbPulse 1.4s ease-in-out 0.6s 4"></span></button>
+<button type="button" data-tab="top" aria-label="Top drawer" aria-expanded="false" style="position: absolute; left: 50%; margin-left: -32px; top: 0px; width: 64px; height: 44px; padding: 0; border: 0; background: transparent; cursor: pointer; display: flex; align-items: flex-start; justify-content: center; transition: top 0.45s ease; z-index: 3"><span data-tab-bar="1" style="width: 56px; height: 10px; border-radius: 0 0 6px 6px; background: var(--accent); animation: pbPulse 1.4s ease-in-out 0.6s 4"></span></button>
+<button type="button" data-tab="right" aria-label="Right drawer" aria-expanded="false" style="position: absolute; top: 50%; margin-top: -32px; right: 0px; width: 44px; height: 64px; padding: 0; border: 0; background: transparent; cursor: pointer; display: flex; align-items: center; justify-content: flex-end; transition: right 0.45s ease; z-index: 3"><span data-tab-bar="1" style="width: 10px; height: 56px; border-radius: 6px 0 0 6px; background: var(--accent); animation: pbPulse 1.4s ease-in-out 0.6s 4"></span></button>
+</div>
+<div style="font-family: 'IBM Plex Mono', Consolas, monospace; font-size: 13px; color: #9aa3a8">Tap a tab to open a drawer; tap the tab of an open drawer to close it.</div>
 </div>
 <div style="display: flex; flex-direction: column; gap: 16px">
 <div style="font-family: 'IBM Plex Mono', Consolas, monospace; font-size: 14px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent)">Classic mode</div>
@@ -159,17 +178,78 @@
 <li style="display: flex; gap: 12px; align-items: baseline"><span style="font-family: 'IBM Plex Mono', Consolas, monospace; font-size: 14px; color: var(--accent)">03</span><span>A background image per page, five framings and a veil that keeps tiles readable.</span></li>
 </ul>
 </div>
-<div aria-hidden="true" style="display: flex; gap: 14px; align-items: center; overflow: hidden">
-<div style="flex: 0 0 22%; aspect-ratio: 16 / 10; background: #171c20; border: 1px solid #2a3237; border-radius: 8px; opacity: 0.5"></div>
-<div style="flex: 1 1 0; min-width: 0; aspect-ratio: 16 / 10; background: #0f1214; border: 1px solid var(--accent); border-radius: 8px; padding: 10px; box-sizing: border-box; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); grid-template-rows: repeat(3, minmax(0, 1fr)); gap: 8px">
-<div style="grid-column: span 2; grid-row: span 2; background: #20272c; border-radius: 5px"></div>
-<div style="grid-column: span 2; background: #20272c; border-radius: 5px"></div>
-<div style="background: #20272c; border-radius: 5px"></div>
-<div style="background: #20272c; border-radius: 5px"></div>
-<div style="grid-column: span 3; background: #20272c; border-radius: 5px"></div>
-<div style="background: #20272c; border-radius: 5px"></div>
+<div style="display: flex; flex-direction: column; gap: 10px; min-width: 0">
+<div style="position: relative">
+<div data-dash="1" data-dash-seconds="5" tabIndex="0" role="region" aria-roledescription="carousel" aria-label="Dashboard pages" style="background: #05070a; border: 10px solid #1d2327; border-radius: 14px; aspect-ratio: 16 / 10; box-sizing: border-box; overflow: hidden; touch-action: pan-y; cursor: grab; user-select: none">
+<div data-dash-track="1" style="display: flex; width: 400%; height: 100%; transform: translateX(calc(0% + 0px)); transition: transform 0.5s ease">
+
+<div data-dash-page="1" aria-hidden="false" style="flex: 0 0 25%; height: 100%; box-sizing: border-box; padding: 10px; background: #0d1117; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); grid-template-rows: auto repeat(3, minmax(0, 1fr)); gap: 8px; font-family: 'IBM Plex Mono', Consolas, monospace; font-size: clamp(9px, 1.1vw, 13px); color: #e6edf3">
+<div style="grid-column: 1 / -1; display: flex; justify-content: space-between; opacity: 0.85"><span>Traffic</span><span>1 / 4</span></div>
+
+<div style="grid-column: span 3; grid-row: span 3; background: #161b22; border: 1px solid #2a3237; border-radius: 6px; box-shadow: none; backdrop-filter: none; padding: 8px; display: flex; flex-direction: column; gap: 6px; overflow: hidden"><span>Traffic map</span><span style="flex: 1 1 0; min-height: 4px; border-radius: 4px; background: rgba(95, 212, 160, 0.25)"></span></div>
+
+<div style="grid-column: span 1; grid-row: span 1; background: #161b22; border: 1px solid #2a3237; border-radius: 6px; box-shadow: none; backdrop-filter: none; padding: 8px; display: flex; flex-direction: column; gap: 6px; overflow: hidden"><span>Commute</span><span style="flex: 1 1 0; min-height: 4px; border-radius: 4px; background: rgba(95, 212, 160, 0.25)"></span></div>
+
+<div style="grid-column: span 1; grid-row: span 1; background: #161b22; border: 1px solid #2a3237; border-radius: 6px; box-shadow: none; backdrop-filter: none; padding: 8px; display: flex; flex-direction: column; gap: 6px; overflow: hidden"><span>Weather</span><span style="flex: 1 1 0; min-height: 4px; border-radius: 4px; background: rgba(95, 212, 160, 0.25)"></span></div>
+
+<div style="grid-column: span 1; grid-row: span 1; background: #161b22; border: 1px solid #2a3237; border-radius: 6px; box-shadow: none; backdrop-filter: none; padding: 8px; display: flex; flex-direction: column; gap: 6px; overflow: hidden"><span>Internet health</span><span style="flex: 1 1 0; min-height: 4px; border-radius: 4px; background: rgba(95, 212, 160, 0.25)"></span></div>
+
 </div>
-<div style="flex: 0 0 22%; aspect-ratio: 16 / 10; background: #171c20; border: 1px solid #2a3237; border-radius: 8px; opacity: 0.5"></div>
+
+<div data-dash-page="1" aria-hidden="true" style="flex: 0 0 25%; height: 100%; box-sizing: border-box; padding: 10px; background: #efe8dc; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); grid-template-rows: auto repeat(3, minmax(0, 1fr)); gap: 8px; font-family: 'Bricolage Grotesque', 'Trebuchet MS', sans-serif; font-size: clamp(9px, 1.1vw, 13px); color: #2b2620">
+<div style="grid-column: 1 / -1; display: flex; justify-content: space-between; opacity: 0.85"><span>Paper</span><span>2 / 4</span></div>
+
+<div style="grid-column: span 2; grid-row: span 3; background: #fffaf1; border: 1px solid #d9cfbf; border-radius: 10px; box-shadow: 0 1px 3px rgba(60, 40, 20, 0.18); backdrop-filter: none; padding: 8px; display: flex; flex-direction: column; gap: 6px; overflow: hidden"><span>Calendar</span><span style="flex: 1 1 0; min-height: 4px; border-radius: 4px; background: rgba(194, 65, 12, 0.18)"></span></div>
+
+<div style="grid-column: span 2; grid-row: span 2; background: #fffaf1; border: 1px solid #d9cfbf; border-radius: 10px; box-shadow: 0 1px 3px rgba(60, 40, 20, 0.18); backdrop-filter: none; padding: 8px; display: flex; flex-direction: column; gap: 6px; overflow: hidden"><span>Notes</span><span style="flex: 1 1 0; min-height: 4px; border-radius: 4px; background: rgba(194, 65, 12, 0.18)"></span></div>
+
+<div style="grid-column: span 1; grid-row: span 1; background: #fffaf1; border: 1px solid #d9cfbf; border-radius: 10px; box-shadow: 0 1px 3px rgba(60, 40, 20, 0.18); backdrop-filter: none; padding: 8px; display: flex; flex-direction: column; gap: 6px; overflow: hidden"><span>Clock</span><span style="flex: 1 1 0; min-height: 4px; border-radius: 4px; background: rgba(194, 65, 12, 0.18)"></span></div>
+
+<div style="grid-column: span 1; grid-row: span 1; background: #fffaf1; border: 1px solid #d9cfbf; border-radius: 10px; box-shadow: 0 1px 3px rgba(60, 40, 20, 0.18); backdrop-filter: none; padding: 8px; display: flex; flex-direction: column; gap: 6px; overflow: hidden"><span>Tempo</span><span style="flex: 1 1 0; min-height: 4px; border-radius: 4px; background: rgba(194, 65, 12, 0.18)"></span></div>
+
+</div>
+
+<div data-dash-page="1" aria-hidden="true" style="flex: 0 0 25%; height: 100%; box-sizing: border-box; padding: 10px; background: #140a24; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); grid-template-rows: auto repeat(3, minmax(0, 1fr)); gap: 8px; font-family: 'Bricolage Grotesque', 'Trebuchet MS', sans-serif; font-size: clamp(9px, 1.1vw, 13px); color: #fdf2ff">
+<div style="grid-column: 1 / -1; display: flex; justify-content: space-between; opacity: 0.85"><span>Sport</span><span>3 / 4</span></div>
+
+<div style="grid-column: span 2; grid-row: span 3; background: #24123f; border: 1px solid #ff3d6e; border-radius: 2px; box-shadow: 0 0 12px rgba(255, 61, 110, 0.25); backdrop-filter: none; padding: 8px; display: flex; flex-direction: column; gap: 6px; overflow: hidden"><span>Formula 1</span><span style="flex: 1 1 0; min-height: 4px; border-radius: 4px; background: rgba(255, 61, 110, 0.3)"></span></div>
+
+<div style="grid-column: span 2; grid-row: span 2; background: #24123f; border: 1px solid #ff3d6e; border-radius: 2px; box-shadow: 0 0 12px rgba(255, 61, 110, 0.25); backdrop-filter: none; padding: 8px; display: flex; flex-direction: column; gap: 6px; overflow: hidden"><span>Circuit map</span><span style="flex: 1 1 0; min-height: 4px; border-radius: 4px; background: rgba(255, 61, 110, 0.3)"></span></div>
+
+<div style="grid-column: span 2; grid-row: span 1; background: #24123f; border: 1px solid #ff3d6e; border-radius: 2px; box-shadow: 0 0 12px rgba(255, 61, 110, 0.25); backdrop-filter: none; padding: 8px; display: flex; flex-direction: column; gap: 6px; overflow: hidden"><span>Standings</span><span style="flex: 1 1 0; min-height: 4px; border-radius: 4px; background: rgba(255, 61, 110, 0.3)"></span></div>
+
+</div>
+
+<div data-dash-page="1" aria-hidden="true" style="flex: 0 0 25%; height: 100%; box-sizing: border-box; padding: 10px; background: linear-gradient(rgba(10, 14, 20, 0.35), rgba(10, 14, 20, 0.35)), linear-gradient(180deg, #f6b26b 0%, #e07a5f 38%, #3d405b 72%, #1b1f33 100%); display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); grid-template-rows: auto repeat(3, minmax(0, 1fr)); gap: 8px; font-family: 'IBM Plex Sans', 'Segoe UI', sans-serif; font-size: clamp(9px, 1.1vw, 13px); color: #ffffff">
+<div style="grid-column: 1 / -1; display: flex; justify-content: space-between; opacity: 0.85"><span>Photo</span><span>4 / 4</span></div>
+
+<div style="grid-column: span 2; grid-row: span 2; background: rgba(255, 255, 255, 0.14); border: 1px solid rgba(255, 255, 255, 0.35); border-radius: 14px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25); backdrop-filter: blur(6px); padding: 8px; display: flex; flex-direction: column; gap: 6px; overflow: hidden"><span>Clock</span><span style="flex: 1 1 0; min-height: 4px; border-radius: 4px; background: rgba(255, 255, 255, 0.18)"></span></div>
+
+<div style="grid-column: span 2; grid-row: span 1; background: rgba(255, 255, 255, 0.14); border: 1px solid rgba(255, 255, 255, 0.35); border-radius: 14px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25); backdrop-filter: blur(6px); padding: 8px; display: flex; flex-direction: column; gap: 6px; overflow: hidden"><span>Weather</span><span style="flex: 1 1 0; min-height: 4px; border-radius: 4px; background: rgba(255, 255, 255, 0.18)"></span></div>
+
+<div style="grid-column: span 2; grid-row: span 1; background: rgba(255, 255, 255, 0.14); border: 1px solid rgba(255, 255, 255, 0.35); border-radius: 14px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25); backdrop-filter: blur(6px); padding: 8px; display: flex; flex-direction: column; gap: 6px; overflow: hidden"><span>Quote of the day</span><span style="flex: 1 1 0; min-height: 4px; border-radius: 4px; background: rgba(255, 255, 255, 0.18)"></span></div>
+
+<div style="grid-column: span 4; grid-row: span 1; background: rgba(255, 255, 255, 0.14); border: 1px solid rgba(255, 255, 255, 0.35); border-radius: 14px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25); backdrop-filter: blur(6px); padding: 8px; display: flex; flex-direction: column; gap: 6px; overflow: hidden"><span>RSS feed</span><span style="flex: 1 1 0; min-height: 4px; border-radius: 4px; background: rgba(255, 255, 255, 0.18)"></span></div>
+
+</div>
+
+</div>
+</div>
+<button type="button" data-dash-prev="1" aria-label="Previous page" style="position: absolute; left: 16px; top: 50%; margin-top: -22px; width: 44px; height: 44px; border-radius: 50%; border: 1px solid rgba(255, 255, 255, 0.25); background: rgba(5, 7, 10, 0.55); color: #ffffff; cursor: pointer; display: flex; align-items: center; justify-content: center"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 3L5 8l5 5"></path></svg></button>
+<button type="button" data-dash-next="1" aria-label="Next page" style="position: absolute; right: 16px; top: 50%; margin-top: -22px; width: 44px; height: 44px; border-radius: 50%; border: 1px solid rgba(255, 255, 255, 0.25); background: rgba(5, 7, 10, 0.55); color: #ffffff; cursor: pointer; display: flex; align-items: center; justify-content: center"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3l5 5-5 5"></path></svg></button>
+</div>
+<div style="display: flex; justify-content: center; gap: 2px">
+
+<button type="button" data-dash-dot="0" aria-label="Page 1: Traffic" aria-current="true" style="width: 44px; height: 44px; padding: 0; border: 0; background: transparent; cursor: pointer; display: flex; align-items: center; justify-content: center"><span style="width: 24px; height: 8px; border-radius: 4px; background: #5fd4a0; transition: width 0.3s ease, background 0.3s ease"></span></button>
+
+<button type="button" data-dash-dot="1" aria-label="Page 2: Paper" aria-current="false" style="width: 44px; height: 44px; padding: 0; border: 0; background: transparent; cursor: pointer; display: flex; align-items: center; justify-content: center"><span style="width: 8px; height: 8px; border-radius: 4px; background: #4a555b; transition: width 0.3s ease, background 0.3s ease"></span></button>
+
+<button type="button" data-dash-dot="2" aria-label="Page 3: Sport" aria-current="false" style="width: 44px; height: 44px; padding: 0; border: 0; background: transparent; cursor: pointer; display: flex; align-items: center; justify-content: center"><span style="width: 8px; height: 8px; border-radius: 4px; background: #4a555b; transition: width 0.3s ease, background 0.3s ease"></span></button>
+
+<button type="button" data-dash-dot="3" aria-label="Page 4: Photo" aria-current="false" style="width: 44px; height: 44px; padding: 0; border: 0; background: transparent; cursor: pointer; display: flex; align-items: center; justify-content: center"><span style="width: 8px; height: 8px; border-radius: 4px; background: #4a555b; transition: width 0.3s ease, background 0.3s ease"></span></button>
+
+</div>
+<div style="font-family: 'IBM Plex Mono', Consolas, monospace; font-size: 13px; color: #9aa3a8">Swipe the screen or use the arrows. Pages turn by themselves until your first gesture.</div>
 </div>
 </div>
 </section>
